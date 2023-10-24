@@ -1,0 +1,5 @@
+// export const colors = ["#2c5275","#f8f6d7","#f6d0ad","#ce875d", "#c25052"]
+// export const colors = ["#809a6f","#a25b5b","#cc9c75","#d5d8b5"]
+// export const colors = ["#064273","#76b6c4","#7fcdff","#1da2d8"]
+// export const colors = ["#fa653c","#eaa33d","#fee873","#a5dde0", "#904a8e"]
+export const colors = ["#006e7f","#ffb56b","#ee5007","#b22727"]

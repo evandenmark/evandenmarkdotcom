@@ -1,4 +1,4 @@
-import FutureAncestors from './futureancestors';
+import FutureAncestors from "./FutureAncestors/FutureAncestors"
 import Home from './homepage';
 import './App.css';
 
