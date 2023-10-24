@@ -4,6 +4,7 @@ import './App.css';
 
 import { 
   BrowserRouter as Router, 
+  Navigate, 
   Route,
   Routes 
 } from "react-router-dom"; 
@@ -17,6 +18,9 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/futureancestors"
                 element={<FutureAncestors />} />
+                
+            {/* default redirect to home page */}
+            <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </Router> 
     </> 
