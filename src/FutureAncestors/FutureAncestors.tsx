@@ -13,7 +13,7 @@ const FutureAncestors = () => {
     const [display, setDisplay] = useState(Display.SHORT)
 
     //shuffle the shorts, allow fulls to go in chronological order
-    const audioData = display == Display.SHORT ? shuffleArray(shortAudio) : fullAudio;
+    const audioData = display === Display.SHORT ? shuffleArray(shortAudio) : fullAudio;
         return (
             <div className={"centerColumn"}>
                 <Header display={display} setDisplay={setDisplay}/> 

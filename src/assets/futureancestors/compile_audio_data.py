@@ -10,8 +10,8 @@ os.remove("data.tsx")
 
 for short_file in os.listdir("short"):
     filetype = short_file.split(".")[1]
-    filename = short_file.split(".")[0].replace("&", "___")
-    speaker = " & ".join(name.capitalize() for name in filename.split("_")[0].split("___"))
+    filename = short_file.split(".")[0].replace("&", "WITH")
+    speaker = " & ".join([name.capitalize() for name in filename.split("_")[0].split("WITH")])
     topic = " ".join(filename.split("_")[1:])
     path = "./short/"+short_file
 

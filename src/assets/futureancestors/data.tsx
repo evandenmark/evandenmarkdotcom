@@ -1,5 +1,5 @@
 import priscilla_escaping_chaos from './short/priscilla_escaping_chaos.mp3'
-import emily___erin_from_disablity_to_superpower from './short/emily&erin_from_disablity_to_superpower.mp3'
+import emilyWITHerin_from_disablity_to_superpower from './short/emily&erin_from_disablity_to_superpower.mp3'
 import lisa_quahogging from './short/lisa_quahogging.mp3'
 import nacy_a_teaching_moment from './short/nacy_a_teaching_moment.mp3'
 import ben_dad_goals from './short/ben_dad_goals.mp3'
@@ -11,7 +11,7 @@ import grammy_painting from './short/grammy_painting.mp3'
 import marissa_becoming_a_mom from './short/marissa_becoming_a_mom.mp3'
 import ben_childhood_anxiety from './short/ben_childhood_anxiety.mp3'
 import kacy_creating_memories from './short/kacy_creating_memories.mp3'
-import ben___marissa_spirituality from './short/ben&marissa_spirituality.mp3'
+import benWITHmarissa_spirituality from './short/ben&marissa_spirituality.mp3'
 import evan_thank_you from './short/evan_thank_you.mp3'
 import tenley_an_eye_opening_moment from './short/tenley_an_eye_opening_moment.mp3'
 import david_destressing from './short/david_destressing.mp3'
@@ -34,21 +34,21 @@ import ben_cape_cod from './short/ben_cape_cod.mp3'
 import marissa_her_papa from './short/marissa_her_papa.mp3'
 import david_sacredness from './short/david_sacredness.mp3'
 import nacy_church from './short/nacy_church.mp3'
-import grammy___poppy_their_first_child from './short/grammy&poppy_their_first_child.mp3'
+import grammyWITHpoppy_their_first_child from './short/grammy&poppy_their_first_child.mp3'
 import priscilla_uncle_johns_beard from './short/priscilla_uncle_johns_beard.mp3'
 import marissa_highs_and_lows from './short/marissa_highs_and_lows.mp3'
 import ben_sibling_superpowers from './short/ben_sibling_superpowers.mp3'
 import tenley_how_she_changed_in_HS from './short/tenley_how_she_changed_in_HS.mp3'
 import erin_Ben from './short/erin_Ben.mp3'
 import lisa_taking_opie_out from './short/lisa_taking_opie_out.mp3'
-import david___priscilla_family_business from './short/david&priscilla_family_business.mp3'
-import ben___marissa_family_business from './short/ben&marissa_family_business.mp3'
+import davidWITHpriscilla_family_business from './short/david&priscilla_family_business.mp3'
+import benWITHmarissa_family_business from './short/ben&marissa_family_business.mp3'
 import priscilla_the_early_days from './short/priscilla_the_early_days.mp3'
 import nacy_the_first_tv from './short/nacy_the_first_tv.mp3'
 import nacy_being_an_entertainer from './short/nacy_being_an_entertainer.mp3'
 import evan_being_in_hawaii from './short/evan_being_in_hawaii.mp3'
 import erin_finding_OT from './short/erin_finding_OT.mp3'
-import priscilla___grammy_the_other_aunt_priscilla from './short/priscilla&grammy_the_other_aunt_priscilla.mp3'
+import priscillaWITHgrammy_the_other_aunt_priscilla from './short/priscilla&grammy_the_other_aunt_priscilla.mp3'
 import lisa_cape_summers from './short/lisa_cape_summers.mp3'
 import tim_a_crazy_party from './short/tim_a_crazy_party.mp3'
 import lisa_trying_new_things from './short/lisa_trying_new_things.mp3'
@@ -58,7 +58,7 @@ import lisa_march_2023 from './full/lisa_march_2023.mp3'
 
 export const shortAudio = [
  { speaker: 'Priscilla', topic: 'escaping chaos', link:priscilla_escaping_chaos},
- { speaker: 'Emily', topic: '  erin from disablity to superpower', link:emily___erin_from_disablity_to_superpower},
+ { speaker: 'Emily & Erin', topic: 'from disablity to superpower', link:emilyWITHerin_from_disablity_to_superpower},
  { speaker: 'Lisa', topic: 'quahogging', link:lisa_quahogging},
  { speaker: 'Nacy', topic: 'a teaching moment', link:nacy_a_teaching_moment},
  { speaker: 'Ben', topic: 'dad goals', link:ben_dad_goals},
@@ -70,7 +70,7 @@ export const shortAudio = [
  { speaker: 'Marissa', topic: 'becoming a mom', link:marissa_becoming_a_mom},
  { speaker: 'Ben', topic: 'childhood anxiety', link:ben_childhood_anxiety},
  { speaker: 'Kacy', topic: 'creating memories', link:kacy_creating_memories},
- { speaker: 'Ben', topic: '  marissa spirituality', link:ben___marissa_spirituality},
+ { speaker: 'Ben & Marissa', topic: 'spirituality', link:benWITHmarissa_spirituality},
  { speaker: 'Evan', topic: 'thank you', link:evan_thank_you},
  { speaker: 'Tenley', topic: 'an eye opening moment', link:tenley_an_eye_opening_moment},
  { speaker: 'David', topic: 'destressing', link:david_destressing},
@@ -93,21 +93,21 @@ export const shortAudio = [
  { speaker: 'Marissa', topic: 'her papa', link:marissa_her_papa},
  { speaker: 'David', topic: 'sacredness', link:david_sacredness},
  { speaker: 'Nacy', topic: 'church', link:nacy_church},
- { speaker: 'Grammy', topic: '  poppy their first child', link:grammy___poppy_their_first_child},
+ { speaker: 'Grammy & Poppy', topic: 'their first child', link:grammyWITHpoppy_their_first_child},
  { speaker: 'Priscilla', topic: 'uncle johns beard', link:priscilla_uncle_johns_beard},
  { speaker: 'Marissa', topic: 'highs and lows', link:marissa_highs_and_lows},
  { speaker: 'Ben', topic: 'sibling superpowers', link:ben_sibling_superpowers},
  { speaker: 'Tenley', topic: 'how she changed in HS', link:tenley_how_she_changed_in_HS},
  { speaker: 'Erin', topic: 'Ben', link:erin_Ben},
  { speaker: 'Lisa', topic: 'taking opie out', link:lisa_taking_opie_out},
- { speaker: 'David', topic: '  priscilla family business', link:david___priscilla_family_business},
- { speaker: 'Ben', topic: '  marissa family business', link:ben___marissa_family_business},
+ { speaker: 'David & Priscilla', topic: 'family business', link:davidWITHpriscilla_family_business},
+ { speaker: 'Ben & Marissa', topic: 'family business', link:benWITHmarissa_family_business},
  { speaker: 'Priscilla', topic: 'the early days', link:priscilla_the_early_days},
  { speaker: 'Nacy', topic: 'the first tv', link:nacy_the_first_tv},
  { speaker: 'Nacy', topic: 'being an entertainer', link:nacy_being_an_entertainer},
  { speaker: 'Evan', topic: 'being in hawaii', link:evan_being_in_hawaii},
  { speaker: 'Erin', topic: 'finding OT', link:erin_finding_OT},
- { speaker: 'Priscilla', topic: '  grammy the other aunt priscilla', link:priscilla___grammy_the_other_aunt_priscilla},
+ { speaker: 'Priscilla & Grammy', topic: 'the other aunt priscilla', link:priscillaWITHgrammy_the_other_aunt_priscilla},
  { speaker: 'Lisa', topic: 'cape summers', link:lisa_cape_summers},
  { speaker: 'Tim', topic: 'a crazy party', link:tim_a_crazy_party},
  { speaker: 'Lisa', topic: 'trying new things', link:lisa_trying_new_things},
