@@ -11,6 +11,7 @@ interface SoundBoxProps {
 const SoundBox = ({data, index}: SoundBoxProps) => {
 
     const boxSize = ((window.screen.width*0.5)/3)*0.9;
+    
     return (
             <Box
                 style={{
@@ -26,9 +27,7 @@ const SoundBox = ({data, index}: SoundBoxProps) => {
                         <h1>{data.speaker}</h1>
                         <p>{data.topic}</p>
                         <div className={"audiocontainer"}>
-                            <audio 
-                            controls 
-                            >
+                            <audio controls >
                                 <source src={data.link} type="audio/mpeg"/>
                                 Your browser does not support the audio tag.
                             </audio>
