@@ -54,6 +54,16 @@ import tim_a_crazy_party from './short/tim_a_crazy_party.mp3'
 import lisa_trying_new_things from './short/lisa_trying_new_things.mp3'
 import lisa_february_2023 from './full/lisa_february_2023.mp3'
 import lisa_march_2023 from './full/lisa_march_2023.mp3'
+import josh from './storyslam/josh.mp3'
+import liam from './storyslam/liam.mp3'
+import lisa from './storyslam/lisa.mp3'
+import maxcy from './storyslam/maxcy.mp3'
+import annMarie from './storyslam/annMarie.mp3'
+import beth from './storyslam/beth.mp3'
+import david from './storyslam/david.mp3'
+import allie from './storyslam/allie.mp3'
+import evan from './storyslam/evan.mp3'
+import andrew from './storyslam/andrew.mp3'
 
 
 export const shortAudio = [
@@ -117,4 +127,18 @@ export const shortAudio = [
 export const fullAudio = [
  { speaker: 'Lisa', topic: 'February 2023', link:lisa_february_2023},
  { speaker: 'Lisa', topic: 'March 2023', link:lisa_march_2023},
+];
+
+
+export const storyslamAudio = [
+ { speaker: 'Josh', topic: '', link:josh},
+ { speaker: 'Liam', topic: '', link:liam},
+ { speaker: 'Lisa', topic: '', link:lisa},
+ { speaker: 'Maxcy', topic: '', link:maxcy},
+ { speaker: 'Annmarie', topic: '', link:annMarie},
+ { speaker: 'Beth', topic: '', link:beth},
+ { speaker: 'David', topic: '', link:david},
+ { speaker: 'Allie', topic: '', link:allie},
+ { speaker: 'Evan', topic: '', link:evan},
+ { speaker: 'Andrew', topic: '', link:andrew},
 ];

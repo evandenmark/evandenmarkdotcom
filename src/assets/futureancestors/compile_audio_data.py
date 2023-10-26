@@ -6,6 +6,7 @@ import os
 import_strings = []
 short_audio_list = []
 full_audio_list = []
+storyslam_audio_list = []
 os.remove("data.tsx")
 
 for short_file in os.listdir("short"):
@@ -34,6 +35,19 @@ for full_file in os.listdir("full"):
         obj_string = " { speaker: '"+speaker+ "', topic: '"+ date+ "', link:"+filename+"},\n"
         full_audio_list.append(obj_string)
 
+for storyslam_file in os.listdir("storyslam"):
+    filetype = storyslam_file.split(".")[1]
+    filename = storyslam_file.split(".")[0]
+    speaker = filename.split("_")[0].capitalize()
+    date = " ".join(x.capitalize() for x in filename.split("_")[1:])
+    path = "./storyslam/"+storyslam_file
+
+    if filetype == "mp3":
+        import_strings.append(f"import {filename} from '{path}'\n")
+
+        obj_string = " { speaker: '"+speaker+ "', topic: '"+ date+ "', link:"+filename+"},\n"
+        storyslam_audio_list.append(obj_string)
+
 
 f = open("data.tsx", "a")
 for i in import_strings:
@@ -46,6 +60,11 @@ f.write("];\n")
 
 f.write("\n\nexport const fullAudio = [\n")
 for obj in full_audio_list:
+    f.write(obj)
+f.write("];\n")
+
+f.write("\n\nexport const storyslamAudio = [\n")
+for obj in storyslam_audio_list:
     f.write(obj)
 f.write("];\n")
 

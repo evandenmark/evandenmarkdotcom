@@ -5,12 +5,17 @@ export type SoundRecord = {
 }
 
 export interface GridSystemProps {
-    data: SoundRecord[]
+    data: SoundRecord[],
+    width: number,
+    height: number,
+    display: Display
 }
 
 export interface HeaderProps {
     display: Display
-    setDisplay: React.Dispatch<React.SetStateAction<Display>>
+    setDisplay: React.Dispatch<React.SetStateAction<Display>>,
+    width: number,
+    height: number
 }
 
 export interface MenuToggleProps {
@@ -25,5 +30,6 @@ export interface FormRowProps {
 
 export enum Display{
     SHORT,
-    FULL
+    FULL,
+    STORYSLAM
 }

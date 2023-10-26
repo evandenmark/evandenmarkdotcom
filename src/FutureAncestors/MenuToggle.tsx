@@ -6,15 +6,21 @@ const MenuToggle = ({display, setDisplay}: MenuToggleProps) => {
 
     
 
-    const toggleAudioDisplay = () => {
-        setDisplay(display==Display.SHORT ? Display.FULL : Display.SHORT)
+    const toggleAudioDisplay = (d: number) => {
+        if (d === 2) {
+          setDisplay(Display.STORYSLAM)
+        } else if (d === 1) {
+          setDisplay(Display.FULL)
+        } else {
+          setDisplay(Display.SHORT)
+        }
     }
 
     return (
         <ToggleButtonGroup
           value={display}
           exclusive
-          onChange={toggleAudioDisplay}
+          onChange={(e, v) => toggleAudioDisplay(v)}
           aria-label="text alignment"
         >
           <ToggleButton value={Display.SHORT} aria-label="left aligned">
@@ -22,6 +28,9 @@ const MenuToggle = ({display, setDisplay}: MenuToggleProps) => {
           </ToggleButton>
           <ToggleButton value={Display.FULL} aria-label="centered">
             Full Audio
+          </ToggleButton>
+          <ToggleButton value={Display.STORYSLAM} aria-label="right aligned">
+            Storyslam
           </ToggleButton>
         </ToggleButtonGroup>
       );

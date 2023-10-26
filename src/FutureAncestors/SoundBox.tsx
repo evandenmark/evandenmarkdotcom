@@ -4,13 +4,16 @@ import { SoundRecord } from "./types";
 
 interface SoundBoxProps {
     data: SoundRecord,
-    index: number
+    index: number,
+    containerWidth: number,
+    numColumns: number
+
 }
 
 
-const SoundBox = ({data, index}: SoundBoxProps) => {
+const SoundBox = ({data, index, containerWidth, numColumns}: SoundBoxProps) => {
 
-    const boxSize = ((window.screen.width*0.5)/3)*0.9;
+    const boxSize = ((containerWidth)/numColumns)*0.9;
     
     return (
             <Box
@@ -21,17 +24,19 @@ const SoundBox = ({data, index}: SoundBoxProps) => {
                     height: boxSize,
                     padding: 12,
                     width: boxSize,
-                    opacity: 0.75
+                    opacity: 0.75,
                 }} >
-                    <div className={"soundbox"}>
-                        <h1>{data.speaker}</h1>
-                        <p>{data.topic}</p>
-                        <div className={"audiocontainer"}>
-                            <audio controls >
-                                <source src={data.link} type="audio/mpeg"/>
-                                Your browser does not support the audio tag.
-                            </audio>
-                        </div>
+                    <div className={"soundbox"} style={{padding: 60}}>
+                        {/* <center> */}
+                            <h1>{data.speaker}</h1>
+                            <p>{data.topic}</p>
+                            <div className={"audiocontainer"}>
+                                <audio controls >
+                                    <source src={data.link} type="audio/mpeg"/>
+                                    Your browser does not support the audio tag.
+                                </audio>
+                            </div>
+                        {/* </center> */}
                     </div>
             </Box>
     )
