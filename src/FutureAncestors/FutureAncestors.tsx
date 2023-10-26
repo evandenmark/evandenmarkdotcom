@@ -19,10 +19,12 @@ const FutureAncestors = () => {
     
     //shuffle the shorts, allow fulls to go in chronological order
     const audioData = useMemo( 
-        () => {console.log("getting audio"); return (
-            display === Display.SHORT ? shortAudio 
-            : display === Display.STORYSLAM ? storyslamAudio
-            :fullAudio)}, 
+        () => { 
+            return (
+                display === Display.SHORT ? shortAudio 
+                : display === Display.STORYSLAM ? storyslamAudio
+                :fullAudio)
+            }, 
         [display]
     )
 
