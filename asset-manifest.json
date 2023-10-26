@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/evandenmarkdotcom/static/css/main.073c9b0a.css",
-    "main.js": "/evandenmarkdotcom/static/js/main.7c7a1797.js",
-    "static/js/787.7c8acee4.chunk.js": "/evandenmarkdotcom/static/js/787.7c8acee4.chunk.js",
-    "index.html": "/evandenmarkdotcom/index.html",
-    "main.073c9b0a.css.map": "/evandenmarkdotcom/static/css/main.073c9b0a.css.map",
-    "main.7c7a1797.js.map": "/evandenmarkdotcom/static/js/main.7c7a1797.js.map",
-    "787.7c8acee4.chunk.js.map": "/evandenmarkdotcom/static/js/787.7c8acee4.chunk.js.map"
+    "main.css": "/static/css/main.073c9b0a.css",
+    "main.js": "/static/js/main.451a0d12.js",
+    "static/js/787.7c8acee4.chunk.js": "/static/js/787.7c8acee4.chunk.js",
+    "static/media/ben_cape_cod.mp3": "/static/media/ben_cape_cod.501b98c5e31517152036.mp3",
+    "index.html": "/index.html",
+    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
+    "main.451a0d12.js.map": "/static/js/main.451a0d12.js.map",
+    "787.7c8acee4.chunk.js.map": "/static/js/787.7c8acee4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.7c7a1797.js"
+    "static/js/main.451a0d12.js"
   ]
 }
