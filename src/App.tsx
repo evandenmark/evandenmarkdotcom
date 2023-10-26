@@ -13,14 +13,10 @@ function App() {
   return ( 
     <> 
       {/* This is the alias of BrowserRouter i.e. Router */} 
-      <Router> 
+      <Router > 
         <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/futureancestors"
-                element={<FutureAncestors />} />
-                
-            {/* default redirect to home page */}
-            <Route path="*" element={<Navigate to="/" />} />
+            <Route path="/futureancestors" element={<FutureAncestors />} />
         </Routes>
       </Router> 
     </> 
