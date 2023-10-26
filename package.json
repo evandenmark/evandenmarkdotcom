@@ -1,7 +1,7 @@
 {
   "name": "evandenmarkdotcom",
   "version": "0.1.0",
-  "homepage": "https://evandenmark.github.io/evandenmarkdotcom",
+  "homepage": "https://evandenmark.com",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.1",
