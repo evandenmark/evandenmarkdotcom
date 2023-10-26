@@ -1,12 +1,12 @@
-###Repo specific: 
+###`Repo specific:` 
 
 When you add a new .mp3 file to the assets folder, put it in the correct subdirectory. 
 Ensure that the name of the file is `speaker_topic_that_they_talk_about.mp3`
 Then, you MUST run `python3 compile_audio_data.py` in the `futureancestors` folder
 This rewrites the `data.tsx` file
-
+\n
 To push CODE to the master branch, `git add` , `commit`, and `git push origin master`
-
+\n
 To push the BUILD, do `npm run deploy -- -m "comments here"`
 This will automatically build the `gh-pages` branch
 
@@ -14,7 +14,7 @@ This will automatically build the `gh-pages` branch
 
 
 
-###General React: 
+###`General React: `
 In the project directory, you can run:
 
 ### `npm start`
