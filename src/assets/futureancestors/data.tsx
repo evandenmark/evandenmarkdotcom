@@ -5,12 +5,12 @@ import nacy_a_teaching_moment from './short/nacy_a_teaching_moment.mp3'
 import ben_dad_goals from './short/ben_dad_goals.mp3'
 import poppy_becoming_a_cape_pharmacist from './short/poppy_becoming_a_cape_pharmacist.mp3'
 import evan_current_motivations from './short/evan_current_motivations.mp3'
-import emily_rememberinng_key_largo from './short/emily_rememberinng_key_largo.mp3'
 import nacy_being_a_switchboard_operator from './short/nacy_being_a_switchboard_operator.mp3'
 import grammy_painting from './short/grammy_painting.mp3'
 import marissa_becoming_a_mom from './short/marissa_becoming_a_mom.mp3'
 import ben_childhood_anxiety from './short/ben_childhood_anxiety.mp3'
 import kacy_creating_memories from './short/kacy_creating_memories.mp3'
+import emily_remembering_key_largo from './short/emily_remembering_key_largo.mp3'
 import benWITHmarissa_spirituality from './short/ben&marissa_spirituality.mp3'
 import evan_thank_you from './short/evan_thank_you.mp3'
 import tenley_an_eye_opening_moment from './short/tenley_an_eye_opening_moment.mp3'
@@ -74,12 +74,12 @@ export const shortAudio = [
  { speaker: 'Ben', topic: 'dad goals', link:ben_dad_goals},
  { speaker: 'Poppy', topic: 'becoming a cape pharmacist', link:poppy_becoming_a_cape_pharmacist},
  { speaker: 'Evan', topic: 'current motivations', link:evan_current_motivations},
- { speaker: 'Emily', topic: 'rememberinng key largo', link:emily_rememberinng_key_largo},
  { speaker: 'Nacy', topic: 'being a switchboard operator', link:nacy_being_a_switchboard_operator},
  { speaker: 'Grammy', topic: 'painting', link:grammy_painting},
  { speaker: 'Marissa', topic: 'becoming a mom', link:marissa_becoming_a_mom},
  { speaker: 'Ben', topic: 'childhood anxiety', link:ben_childhood_anxiety},
  { speaker: 'Kacy', topic: 'creating memories', link:kacy_creating_memories},
+ { speaker: 'Emily', topic: 'remembering key largo', link:emily_remembering_key_largo},
  { speaker: 'Ben & Marissa', topic: 'spirituality', link:benWITHmarissa_spirituality},
  { speaker: 'Evan', topic: 'thank you', link:evan_thank_you},
  { speaker: 'Tenley', topic: 'an eye opening moment', link:tenley_an_eye_opening_moment},
