@@ -1,14 +1,20 @@
 ###`Repo specific:` 
 This repo for all of evandenmark.com. 
 
+
+
 Future Ancestors
+
 
 When you add a new .mp3 file to the assets folder, put it in the correct subdirectory. 
 Ensure that the name of the file is `speaker_topic_that_they_talk_about.mp3`
 Then, you MUST run `python3 compile_audio_data.py` in the `futureancestors` folder
+
 This rewrites the `data.tsx` file
 
+
 To push CODE to the master branch, `git add` , `commit`, and `git push origin master`
+
 
 To push the BUILD, do `npm run deploy -- -m "comments here"`
 This will automatically build the `gh-pages` branch
