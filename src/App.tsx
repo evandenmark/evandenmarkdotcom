@@ -3,7 +3,6 @@ import Home from './homepage';
 import './App.css';
 
 import { 
-  BrowserRouter as Router, 
   Navigate, 
   Route,
   Routes 
@@ -12,13 +11,10 @@ import {
 function App() {
   return ( 
     <> 
-      {/* This is the alias of BrowserRouter i.e. Router */} 
-      <Router > 
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/futureancestors" element={<FutureAncestors />} />
         </Routes>
-      </Router> 
     </> 
   ); 
 }
