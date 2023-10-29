@@ -4,8 +4,14 @@ const Home = () => {
     const navigate = useNavigate();
     return(
         <div className="home">
-            <h1>This is the Home page</h1>
-            <button onClick={() => navigate('/futureancestors')}>Future Ancestors</button>
+            <h1>Click Below</h1>
+            <button 
+                onClick={() => navigate('/futureancestors')}
+                style={{
+                    fontSize: 30
+                }}
+
+                >Future Ancestors</button>
         </div>
     )
 }
