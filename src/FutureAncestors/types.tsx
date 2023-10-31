@@ -8,19 +8,23 @@ export interface GridSystemProps {
     data: SoundRecord[],
     width: number,
     height: number,
-    display: Display
+    display: Display,
+    filter: string,
+    setFilter: React.Dispatch<React.SetStateAction<string>>
 }
 
 export interface HeaderProps {
     display: Display
     setDisplay: React.Dispatch<React.SetStateAction<Display>>,
     width: number,
-    height: number
+    height: number,
+    setFilter: React.Dispatch<React.SetStateAction<string>>
 }
 
 export interface MenuToggleProps {
     display: Display
-    setDisplay: React.Dispatch<React.SetStateAction<Display>>
+    setDisplay: React.Dispatch<React.SetStateAction<Display>>,
+    setFilter: React.Dispatch<React.SetStateAction<string>>
 }
 
 

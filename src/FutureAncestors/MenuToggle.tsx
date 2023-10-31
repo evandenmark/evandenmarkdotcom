@@ -2,7 +2,7 @@ import { ToggleButton, ToggleButtonGroup } from "@mui/material";
 import { useState } from "react";
 import { Display, MenuToggleProps } from "./types";
 
-const MenuToggle = ({display, setDisplay}: MenuToggleProps) => {
+const MenuToggle = ({display, setDisplay, setFilter}: MenuToggleProps) => {
 
     
 
@@ -14,6 +14,7 @@ const MenuToggle = ({display, setDisplay}: MenuToggleProps) => {
         } else {
           setDisplay(Display.SHORT)
         }
+        setFilter("")
     }
 
     return (

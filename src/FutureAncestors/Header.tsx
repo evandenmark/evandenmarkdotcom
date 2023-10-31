@@ -12,7 +12,8 @@ const Header = (
         display, 
         setDisplay, 
         width, 
-        height
+        height,
+        setFilter
     }: HeaderProps) => {
 
     const aspectRatio = width / height;
@@ -58,7 +59,11 @@ const Header = (
                     </div>
                 </div>
                 <Stack spacing={2}>
-                    <MenuToggle display={display} setDisplay={setDisplay}/>
+                    <MenuToggle 
+                        display={display} 
+                        setDisplay={setDisplay}
+                        setFilter={setFilter}
+                    />
                     <button
                         style={{
                             fontSize: 15
@@ -85,7 +90,11 @@ const Header = (
                             </div>
                         </div>
                     
-                        <MenuToggle display={display} setDisplay={setDisplay}/>
+                        <MenuToggle 
+                            display={display} 
+                            setDisplay={setDisplay}
+                            setFilter={setFilter}
+                        />
 
                         <button
                             style={{

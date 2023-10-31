@@ -13,7 +13,8 @@ const GridSystem = ({
     data,
     width,
     height,
-    display
+    display,
+    filter
   }: GridSystemProps
   ) => {
 
@@ -21,8 +22,12 @@ const GridSystem = ({
     const numColumns = aspectRatio > 1.5 ? 3 : aspectRatio > 0.8 ? 2 : 1
     const containerWidth = width < 720 ? width : width*0.8
     
-    const [filter, setFilter] = useState("");
-    const audioData = data.filter(a => a.speaker.toLowerCase().startsWith(filter.toLowerCase()))
+    //either the speaker starts with the filter (i.e. "Pr" for "priscilla")
+    //or it is a joint speaker so it must inclue "& Pr"
+    const audioData = data.filter(a => 
+      a.speaker.toLowerCase().startsWith(filter.toLowerCase()) ||
+      (a.speaker.toLowerCase().includes("& " + filter.toLowerCase()))
+    )
     
     const NUM_ROWS = Math.ceil(audioData.length/numColumns);
 
@@ -70,15 +75,6 @@ const GridSystem = ({
 
     return (
       <Paper elevation={0}>
-        <TextField 
-                id="outlined-basic" 
-                label="Search" 
-                variant="outlined" 
-                onChange={(e) => setFilter(e.target.value)} 
-                style={{
-                  marginTop: 5
-                }}
-        />
         {
           display===Display.STORYSLAM && (
             <p><i>Held in March 2023, this slam asked speakers

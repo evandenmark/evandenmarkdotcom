@@ -7,14 +7,14 @@ import useWindowDimensions, {shuffleArray} from "./utils"
 import Header from "./Header";
 import GridSystem from "./GridSystem";
 import { Display } from './types';
-import { Paper } from '@mui/material';
+import { Paper, TextField } from '@mui/material';
 
 
 const FutureAncestors = () => {
 
-    const [display, setDisplay] = useState(Display.SHORT)
+    const [display, setDisplay] = useState(Display.SHORT);
+    const [filter, setFilter] = useState("");
 
-    // const { height, width } = useWindowDimensions();
     const { innerWidth: width, innerHeight: height } = window;
     
     //shuffle the shorts, allow fulls to go in chronological order
@@ -29,7 +29,8 @@ const FutureAncestors = () => {
     )
 
     const shuffledData = useMemo(
-        () => display === Display.SHORT ? shuffleArray(audioData) : audioData,
+        () => display === Display.SHORT || display === Display.STORYSLAM ? shuffleArray(audioData) 
+        : audioData,
         [audioData]
     )
     
@@ -49,13 +50,28 @@ const FutureAncestors = () => {
                 setDisplay={setDisplay} 
                 width ={width}
                 height={height}
+                setFilter={setFilter}
             /> 
+
+            {/* filter */}
+            <TextField 
+                id="outlined-basic" 
+                label="Search for People" 
+                value={filter}
+                variant="outlined" 
+                onChange={(e) => setFilter(e.target.value)} 
+                style={{
+                  marginTop: 5
+                }}
+            />
 
             <GridSystem 
                 data={shuffledData} 
                 width={width}
                 height={height}
                 display={display}
+                filter={filter}
+                setFilter={setFilter}
             />
         </Paper>
     )
