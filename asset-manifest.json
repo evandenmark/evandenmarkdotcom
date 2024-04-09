@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.50ed669f.js",
+    "main.css": "/static/css/main.96abd2f2.css",
+    "main.js": "/static/js/main.71852306.js",
     "static/js/787.7c8acee4.chunk.js": "/static/js/787.7c8acee4.chunk.js",
     "static/media/lisa_meeting_david.mp3": "/static/media/lisa_meeting_david.0ddc37f17201fe374a1a.mp3",
     "static/media/lisa_joyful_elders.mp3": "/static/media/lisa_joyful_elders.93d185ab1947b7a86947.mp3",
@@ -68,12 +68,12 @@
     "static/media/tenley_how_she_changed_in_HS.mp3": "/static/media/tenley_how_she_changed_in_HS.4338242f093ebb7605dd.mp3",
     "static/media/nacy_being_a_switchboard_operator.mp3": "/static/media/nacy_being_a_switchboard_operator.152eb063dbcbd71439b3.mp3",
     "index.html": "/index.html",
-    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.50ed669f.js.map": "/static/js/main.50ed669f.js.map",
+    "main.96abd2f2.css.map": "/static/css/main.96abd2f2.css.map",
+    "main.71852306.js.map": "/static/js/main.71852306.js.map",
     "787.7c8acee4.chunk.js.map": "/static/js/787.7c8acee4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.50ed669f.js"
+    "static/css/main.96abd2f2.css",
+    "static/js/main.71852306.js"
   ]
 }
