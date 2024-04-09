@@ -20,7 +20,7 @@ const Home = () => {
                     title={"Postcards"}
                     time={"2024"}
                     description={"COMING SOON: Let's hand deliver a postcard without Google Maps."}
-                    link={""}
+                    link={"/postcards"}
                     />
                 </li>
             <li>
@@ -36,7 +36,7 @@ const Home = () => {
                     title={"Micronations"}
                     time={"2022 - present"}
                     description={"Is a nation a nation no matter how small?"}
-                    link={""}
+                    link={"/micronations"}
                     />
                 </li>
             </ul>
@@ -60,13 +60,20 @@ const Home = () => {
                         link={"https://evandenmark.github.io/ForSpaciousSkies/"}
                         />
                 </li>
-
+                <li>
+                    <AnswerProject 
+                        title={"Cocoa Calypso"}
+                        time={"2020-2021"}
+                        description={"Nomading North America through sound"}
+                        link={"https://evandenmark.github.io/CocoaStorymap/"}
+                        />
+                </li> 
                 <li>
                     <AnswerProject 
                         title={"Retinal Ritual"}
                         time={"2019"}
                         description={"Art installation at MIT's Under the Dome exhibit"}
-                        link={""}
+                        link={"/retinalritual"}
                         />
                 </li>
 
@@ -112,7 +119,7 @@ const Home = () => {
                         title={"MIT Civic Data Design Lab"}
                         time={"2020"}
                         description={"Project Manager for data journalism blog"}
-                        link={"https://blog.civicdatadesignlab.mit.edu/page/3"}
+                        link={"https://blog.civicdatadesignlab.mit.edu/"}
                         />
                 </li>
                 
@@ -133,7 +140,7 @@ const Home = () => {
                         title={"National Geographic"}
                         time={"2019"}
                         description={"Galapagos Islands, Deep Sea Drop Camera"}
-                        link={""}
+                        link={"/natgeo"}
                         />
                 </li> 
                 
@@ -142,17 +149,10 @@ const Home = () => {
                         title={"Booth Road Farms"}
                         time={"2021-2023"}
                         description={"Farming in Residency: malama 'aina a Pauoa Valley agroforest"}
-                        link={""}
+                        link={"/boothroad"}
                         />
                 </li> 
-                <li>
-                    <AnswerProject 
-                        title={"Cocoa Calypso"}
-                        time={"2020-2021"}
-                        description={"Nomading North America through sound"}
-                        link={"https://evandenmark.github.io/CocoaStorymap/"}
-                        />
-                </li> 
+                
                 <li>
                     <AnswerProject 
                         title={"Mars College"}

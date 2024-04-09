@@ -17,7 +17,7 @@ const AnswerProject = ({ title, time, description, link }: AnswerProjectProps) =
             // Check if the link is external
             if (/^(http|https):\/\//.test(link)) {
                 // External link: Navigate using window.location.href
-                window.location.href = link;
+                window.open(link, '_blank');
             } else {
                 // Internal link: Navigate using react-router-dom's navigate
                 navigate(link);
