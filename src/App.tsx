@@ -1,5 +1,5 @@
 import FutureAncestors from "./FutureAncestors/FutureAncestors"
-import Home from './homepage';
+import Home from './Homepage/homepage';
 import './App.css';
 
 import { 

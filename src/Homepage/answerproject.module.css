@@ -1,0 +1,34 @@
+/* AnswerProject.module.css */
+.project {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background: #ACE2E1;
+}
+
+.projectTitle {
+    color: #387eaf;
+    cursor: pointer;
+    font-size: 1.5em;
+    text-decoration: underline
+}
+
+.projectTitle:hover {
+    text-decoration: underline;
+}
+
+.projectTitleNoLink {
+    color: #1b5985;
+    font-size: 1.5em;
+}
+
+
+.projectTime {
+    color: #41C9E2;
+    font-size: 1.2em;
+}
+
+.projectDescription {
+    color: #6b6b6b;
+    margin-top: 10px;
+}

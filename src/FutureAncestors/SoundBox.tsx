@@ -1,6 +1,7 @@
 import { Box } from "@mui/system";
 import { colors } from "./theme";
 import { SoundRecord } from "./types";
+import styles from "./futureancestors.module.css"
 
 interface SoundBoxProps {
     data: SoundRecord,
@@ -28,8 +29,8 @@ const SoundBox = ({data, index, containerWidth, numColumns}: SoundBoxProps) => {
                 }} >
                     <div className={"soundbox"} style={{padding: 60}}>
                         {/* <center> */}
-                            <h1>{data.speaker}</h1>
-                            <p>{data.topic}</p>
+                            <div className={styles.speaker}>{data.speaker}</div>
+                            <p className={styles.topic}>{data.topic}</p>
                             <div className={"audiocontainer"}>
                                 <audio controls >
                                     <source src={data.link} type="audio/mpeg"/>
