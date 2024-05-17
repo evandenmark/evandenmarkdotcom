@@ -23,7 +23,7 @@ const Intro = () => {
                     </div>
                     <div className={styles.content}>
                         <p className={styles.paragraph}>
-                            I am a technical storyteller - i.e. a trained engineer and multi-media creator.
+                            I am a technical storyteller - i.e. a software engineer and multi-media journalist.
                         </p>
                         <p className={styles.paragraph}> Born and raised by the ocean, I thrive in the <b><u onClick={scrollToBottom} style={{cursor: 'pointer'}}>intertidal zone</u></b>:
                             my work brings many worlds together and leans into their intersection.
