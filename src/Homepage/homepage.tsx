@@ -95,7 +95,7 @@ const Home = () => {
                 </li>
             </ul>
 
-            <h1>Past Projects</h1>
+            <h1>My Work</h1>
             <ul>
                 <li>
                     <AnswerProject 
