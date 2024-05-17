@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.7b15ac54.css",
-    "main.js": "/static/js/main.8d7c58b7.js",
+    "main.css": "/static/css/main.42e04a63.css",
+    "main.js": "/static/js/main.352b3ef1.js",
     "static/js/787.7c8acee4.chunk.js": "/static/js/787.7c8acee4.chunk.js",
     "static/media/lisa_meeting_david.mp3": "/static/media/lisa_meeting_david.0ddc37f17201fe374a1a.mp3",
     "static/media/lisa_joyful_elders.mp3": "/static/media/lisa_joyful_elders.93d185ab1947b7a86947.mp3",
@@ -76,12 +76,12 @@
     "static/media/autio.png": "/static/media/autio.356e41c3deb0ef20893a.png",
     "static/media/cddl.png": "/static/media/cddl.f9018dbcfc4e95573a1b.png",
     "index.html": "/index.html",
-    "main.7b15ac54.css.map": "/static/css/main.7b15ac54.css.map",
-    "main.8d7c58b7.js.map": "/static/js/main.8d7c58b7.js.map",
+    "main.42e04a63.css.map": "/static/css/main.42e04a63.css.map",
+    "main.352b3ef1.js.map": "/static/js/main.352b3ef1.js.map",
     "787.7c8acee4.chunk.js.map": "/static/js/787.7c8acee4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7b15ac54.css",
-    "static/js/main.8d7c58b7.js"
+    "static/css/main.42e04a63.css",
+    "static/js/main.352b3ef1.js"
   ]
 }
