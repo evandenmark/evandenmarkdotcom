@@ -5,13 +5,67 @@ import Intro from "./Intro";
 import QuestionDropdown from "./QuestionDropdown";
 import styles from "./homepage.module.css";
 import { Paper } from "@mui/material";
+import natgeo from "../assets/images/natgeo.png"
+import purplemaia from "../assets/images/purplemaia.png"
+import pixar from "../assets/images/pixar.png"
+import medialab from "../assets/images/medialab.png"
+import cddl from "../assets/images/cddl.png"
+import autio from "../assets/images/autio.png"
+import thetech from "../assets/images/thetech.png"
+
 
 const Home = () => {
     const navigate = useNavigate();
+
+    const handleTitleClick = (link: string) => {
+        if (link) {
+            // Check if the link is external
+            if (/^(http|https):\/\//.test(link)) {
+                // External link: Navigate using window.location.href
+                window.open(link, '_blank');
+            } else {
+                // Internal link: Navigate using react-router-dom's navigate
+                navigate(link);
+            }
+        }
+    };
+
+    const affiliations = [
+        {name: "National Geographic", img: natgeo, link: "/natgeo"},
+        {name: "MIT Media Lab", img: medialab, link: "/"},
+        {name: "Pixar", img: pixar, link: "/natgeo"},
+        {name: "Purple Mai'a", img: purplemaia, link: "/natgeo"},
+        {name: "CDDL", img: cddl, link: "/natgeo"},
+        {name: "The Tech", img: thetech, link: "/natgeo"},
+        {name: "Autio", img: autio, link: "/natgeo"},
+    ]
+
+    const projects = [
+        {name: "Autio", link:"https://autio.com/"}, 
+        {name: "For Spacious Skies", link:"https://autio.com/"}, 
+        {name: "Cocoa Calypso", link:"https://autio.com/"}, 
+        {name: "Retinal Ritual", link:"https://autio.com/"}, 
+        {name: "Future Ocean Lab", link:"https://autio.com/"}, 
+        {name: "Incredibles 2", link:"https://autio.com/"}, 
+        {name: "Bloom Nepal", link:"https://autio.com/"}, 
+        {name: "NatGeo DropCam", link:"https://autio.com/"}, 
+        {name: "Civic Data Design Lab", link:"https://autio.com/"}, 
+        
+    ]
+
     return(
         <Paper className={styles.main}>
         <div className={styles.home}>
             <Intro/>
+
+            <ul className={styles["affiliations-ul"]}>
+                {affiliations.map(aff => 
+                <div className={styles.affiliations}>
+                    <img src={aff.img} onClick={() => handleTitleClick(aff.link)}></img>
+                </div>
+                )}
+            
+            </ul>
 
             <h1>Open Collaborations and Projects</h1>
             <ul>
@@ -87,51 +141,6 @@ const Home = () => {
                 </li>
             </ul>
 
-            <h1>Affiliations</h1>
-
-            <ul>
-            <li>
-                    <AnswerProject 
-                        title={"Purple Mai'a"}
-                        time={"2023"}
-                        description={"Cohort 5 of Ka Maka Inana - Ethical Design in a Hawaiian context"}
-                        link={"https://purplemaia.org/innovation/training/ka-maka-inana/"}
-                        />
-                </li>    
-                <li>
-                    <AnswerProject 
-                        title={"MIT Media Lab, Future Ocean Lab"}
-                        time={"2019-2020"}
-                        description={"Created multimedia educational experiences for ocean storytelling "}
-                        link={"https://youtu.be/NEfQTtMSXHQ"}
-                        />
-                </li>
-                <li>
-                    <AnswerProject 
-                        title={"Pixar Animation Studios"}
-                        time={"2016-2018"}
-                        description={"Technical director for Oscar nomiated Incredibles 2 and Cars 3"}
-                        link={"https://www.imdb.com/name/nm9761816/?ref_=fn_al_nm_1"}
-                        />
-                </li>
-                <li>
-                    <AnswerProject 
-                        title={"MIT Civic Data Design Lab"}
-                        time={"2020"}
-                        description={"Project Manager for data journalism blog"}
-                        link={"https://blog.civicdatadesignlab.mit.edu/"}
-                        />
-                </li>
-                
-                <li>
-                    <AnswerProject 
-                        title={"The Tech"}
-                        time={"2020"}
-                        description={"Staff reporter for MIT newspaper"}
-                        link={"https://thetech.com/authors/evan-denmark"}
-                        />
-                </li>
-            </ul>
 
             <h1>Expeditions and Residencies</h1>
             <ul>
