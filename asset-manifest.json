@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.96abd2f2.css",
-    "main.js": "/static/js/main.b3a3a16d.js",
+    "main.css": "/static/css/main.d7ce76a4.css",
+    "main.js": "/static/js/main.048afb9b.js",
     "static/js/787.7c8acee4.chunk.js": "/static/js/787.7c8acee4.chunk.js",
     "static/media/lisa_meeting_david.mp3": "/static/media/lisa_meeting_david.0ddc37f17201fe374a1a.mp3",
     "static/media/lisa_joyful_elders.mp3": "/static/media/lisa_joyful_elders.93d185ab1947b7a86947.mp3",
@@ -67,13 +67,21 @@
     "static/media/nacy_the_first_tv.mp3": "/static/media/nacy_the_first_tv.71c96e3ca08741a44a26.mp3",
     "static/media/tenley_how_she_changed_in_HS.mp3": "/static/media/tenley_how_she_changed_in_HS.4338242f093ebb7605dd.mp3",
     "static/media/nacy_being_a_switchboard_operator.mp3": "/static/media/nacy_being_a_switchboard_operator.152eb063dbcbd71439b3.mp3",
+    "static/media/purplemaia.png": "/static/media/purplemaia.49e31b9dde856ebc13b1.png",
+    "static/media/pixar.png": "/static/media/pixar.7261a35d99bb1528b6fd.png",
+    "static/media/me.jpeg": "/static/media/me.54724b426b29463ed07d.jpeg",
+    "static/media/natgeo.png": "/static/media/natgeo.40d571bbe0f0d8adfa89.png",
+    "static/media/thetech.png": "/static/media/thetech.028445283e9f25cbfe03.png",
+    "static/media/medialab.png": "/static/media/medialab.d1bd5ad3e185ac7ff279.png",
+    "static/media/autio.png": "/static/media/autio.356e41c3deb0ef20893a.png",
+    "static/media/cddl.png": "/static/media/cddl.f9018dbcfc4e95573a1b.png",
     "index.html": "/index.html",
-    "main.96abd2f2.css.map": "/static/css/main.96abd2f2.css.map",
-    "main.b3a3a16d.js.map": "/static/js/main.b3a3a16d.js.map",
+    "main.d7ce76a4.css.map": "/static/css/main.d7ce76a4.css.map",
+    "main.048afb9b.js.map": "/static/js/main.048afb9b.js.map",
     "787.7c8acee4.chunk.js.map": "/static/js/787.7c8acee4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.96abd2f2.css",
-    "static/js/main.b3a3a16d.js"
+    "static/css/main.d7ce76a4.css",
+    "static/js/main.048afb9b.js"
   ]
 }
