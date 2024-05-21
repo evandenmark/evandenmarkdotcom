@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import AnswerProject from "./AnswerProject";
 import IntertidalZone from "./IntertidalZone";
 import Intro from "./Intro";
@@ -32,16 +32,15 @@ const Home = () => {
     };
 
     const collabs = [
-        {name: "Postcards", description: "An audio documentary to deliver a postcard...without Google Maps", year: "2024", image:"images/postcards.png"},
-        {name: "Future Ancestors", description: "A sound archive to connect my family's voices through time ", year: "2023-present", image:"images/futureancestors.png"},
-        {name: "Micronations", description: "Is a nation a nation no matter how small?", year: "2022-present", image:"images/micronations.png"}
+        {name: "The Post Man", description: "An audio documentary about the delivery of a postcard...without Google Maps", year: "2024", image:"images/postcards3.png", link: "/postcards"},
+        // {name: "Micronations", description: "Is a nation a nation no matter how small?", year: "2022-present", image:"images/micronations.png", link: "/micronations"}
     
     ]
 
     const affiliations = [
         {name: "National Geographic", img: natgeo, link: "/natgeo"},
         {name: "MIT Media Lab", img: medialab, link: "/"},
-        {name: "Pixar", img: pixar, link: "/natgeo"},
+        {name: "Pixar", img: pixar, link:"https://www.imdb.com/name/nm9761816/"},
         {name: "Purple Mai'a", img: purplemaia, link: "/natgeo"},
         {name: "CDDL", img: cddl, link: "/natgeo"},
         {name: "The Tech", img: thetech, link: "/natgeo"},
@@ -49,11 +48,16 @@ const Home = () => {
     ]
 
     const projects = [
+        {name: "Future Ancestors", description: "A sound archive to connect my family's voices through time ", year: "2023-present", image:"images/futureancestors.png", link: "/futureancestors"},
+        
         {name: "Autio", year: "2021", description: "A place-based podcast mobile app", link:"https://autio.com/", image: "/images/autio.png"}, 
-        {name: "For Spacious Skies", year: "2020",description: "A data scrollytelling visualization about COVID travel", link:"https://evandenmark.github.io/ForSpaciousSkies/", image: "/images/spaciousskies.png"}, 
-        {name: "Civic Data Design Lab", year: "2020", description: "Data journalism work at MIT Urban Planning", link:"https://blog.civicdatadesignlab.mit.edu/h2a:-america's-essential-yet-unknown-program", image: "/images/cddl.png"}, 
         
         {name: "Cocoa Calypso", year: "2020",description: "Nomading North America through sound", link:"https://evandenmark.github.io/CocoaStorymap/", image: "/images/cocoa.png"}, 
+    ]
+
+    const visual = [
+        {name: "For Spacious Skies", year: "2020",description: "A data scrollytelling visualization about COVID travel", link:"https://evandenmark.github.io/ForSpaciousSkies/", image: "/images/spaciousskies.png"}, 
+        {name: "Civic Data Design Lab", year: "2020", description: "Data journalism work at MIT Urban Planning", link:"https://blog.civicdatadesignlab.mit.edu/h2a:-america's-essential-yet-unknown-program", image: "/images/cddl.png"}, 
         
         {name: "NatGeo DropCam", year: "2019",description: "Deep sea cameras in the Galapagos", link:"/natgeo", image: "/images/natgeo.png"},
         {name: "Retinal Ritual", year: "2019",description: "Art installation at MIT's Under the Dome exhibit", link:"/retinalritual", image: "/images/retinalritual.png"}, 
@@ -62,12 +66,23 @@ const Home = () => {
         {name: "Incredibles 2", year: "2016-2018",description: "Technical lighting on the Oscar-nominated film",link:"https://www.imdb.com/name/nm9761816/", image: "/images/i2.png"}, 
         {name: "Bloom Nepal", year: "2017",description: "A short film on innovative education in Nepal", link:"https://www.youtube.com/watch?v=F3zxuaIjTq0", image: "/images/bloom.png"}, 
          
-        
     ]
 
     return(
         <Paper className={styles.main}>
         <div className={styles.home}>
+            <div className={styles.menu}>
+                <nav>
+                    <ul className={styles.navList}>
+                        <li><Link to="/about">About</Link></li>
+                        <li><Link to="#my-work">My Work</Link></li>
+                        <li><Link to="https://docs.google.com/document/d/1SKFlFGR8Am_kIG0-sL_NDgGAwZA2eXAljyl3XXZKHag/edit?usp=sharing">CV</Link></li>
+                        
+                    </ul>
+                </nav>
+            </div>`
+
+
             <Intro/>
 
             <ul className={styles["affiliations-ul"]}>
@@ -79,8 +94,9 @@ const Home = () => {
             
             </ul>
 
-            <h1>Open Collaborations and Projects</h1>
-            <div> 
+            <h1>Active Projects</h1>
+            <h3>"in-the-pipeline" work looking for funding and collaborators </h3>
+            <div id={"my-work"}> 
                 <ul className={styles.projectList}> 
                 {collabs.map((c, index) => (
                     <li
@@ -89,6 +105,7 @@ const Home = () => {
                         style={{
                             backgroundImage: `url(${c.image})`, 
                         }}
+                        onClick={() => handleTitleClick(c.link)}
                     >
                         <h2>{c.name}</h2>
                         <p><b><i>{c.year}</i></b></p>
@@ -98,59 +115,47 @@ const Home = () => {
                 </ul>
             </div>
 
-            <h1>My Work</h1>
+            <h1>Audio </h1>
 
             <div> 
                 <ul className={styles.projectList}> 
-                {projects.map((c, index) => (
+                {projects.map((p, index) => (
                     <li
                         key={index}
                         className={styles.projectItem}
                         style={{
-                            backgroundImage: `url(${c.image})`, 
+                            backgroundImage: `url(${p.image})`, 
                         }}
+                        onClick={() => handleTitleClick(p.link)}
                     >
-                        <h2>{c.name}</h2>
-                        <p><b><i>{c.year}</i></b></p>
-                        <p>{c.description}</p>
+                        <h2>{p.name}</h2>
+                        <p><b><i>{p.year}</i></b></p>
+                        <p>{p.description}</p>
                     </li>
                 ))}
                 </ul>
             </div>
-            
 
+            <h1>Visual</h1>
 
-            <h1>Expeditions and Residencies</h1>
-            <ul>
-                <li>
-                    <AnswerProject 
-                        title={"National Geographic"}
-                        time={"2019"}
-                        description={"Galapagos Islands, Deep Sea Drop Camera"}
-                        link={"/natgeo"}
-                        />
-                </li> 
-                
-                <li>
-                    <AnswerProject 
-                        title={"Booth Road Farms"}
-                        time={"2021-2023"}
-                        description={"Farming in Residency: malama 'aina a Pauoa Valley agroforest"}
-                        link={"/boothroad"}
-                        />
-                </li> 
-                
-                <li>
-                    <AnswerProject 
-                        title={"Mars College"}
-                        time={"2021"}
-                        description={"An off-grid technical art residency in the desert "}
-                        link={"https://mars.college/"}
-                        />
-                </li> 
-            </ul>
-
-            
+            <div> 
+                <ul className={styles.projectList}> 
+                {visual.map((p, index) => (
+                    <li
+                        key={index}
+                        className={styles.projectItem}
+                        style={{
+                            backgroundImage: `url(${p.image})`, 
+                        }}
+                        onClick={() => handleTitleClick(p.link)}
+                    >
+                        <h2>{p.name}</h2>
+                        <p><b><i>{p.year}</i></b></p>
+                        <p>{p.description}</p>
+                    </li>
+                ))}
+                </ul>
+            </div>
             
             <div id="intertidal">
                 <IntertidalZone/>
