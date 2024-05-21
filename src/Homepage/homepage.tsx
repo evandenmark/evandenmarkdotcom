@@ -12,6 +12,7 @@ import medialab from "../assets/images/medialab.png"
 import cddl from "../assets/images/cddl.png"
 import autio from "../assets/images/autio.png"
 import thetech from "../assets/images/thetech.png"
+import zIndex from "@mui/material/styles/zIndex";
 
 
 const Home = () => {
@@ -30,6 +31,13 @@ const Home = () => {
         }
     };
 
+    const collabs = [
+        {name: "Postcards", description: "An audio documentary to deliver a postcard...without Google Maps", year: "2024", image:"images/postcards.png"},
+        {name: "Future Ancestors", description: "A sound archive to connect my family's voices through time ", year: "2023-present", image:"images/futureancestors.png"},
+        {name: "Micronations", description: "Is a nation a nation no matter how small?", year: "2022-present", image:"images/micronations.png"}
+    
+    ]
+
     const affiliations = [
         {name: "National Geographic", img: natgeo, link: "/natgeo"},
         {name: "MIT Media Lab", img: medialab, link: "/"},
@@ -41,15 +49,19 @@ const Home = () => {
     ]
 
     const projects = [
-        {name: "Autio", link:"https://autio.com/"}, 
-        {name: "For Spacious Skies", link:"https://autio.com/"}, 
-        {name: "Cocoa Calypso", link:"https://autio.com/"}, 
-        {name: "Retinal Ritual", link:"https://autio.com/"}, 
-        {name: "Future Ocean Lab", link:"https://autio.com/"}, 
-        {name: "Incredibles 2", link:"https://autio.com/"}, 
-        {name: "Bloom Nepal", link:"https://autio.com/"}, 
-        {name: "NatGeo DropCam", link:"https://autio.com/"}, 
-        {name: "Civic Data Design Lab", link:"https://autio.com/"}, 
+        {name: "Autio", year: "2021", description: "A place-based podcast mobile app", link:"https://autio.com/", image: "/images/autio.png"}, 
+        {name: "For Spacious Skies", year: "2020",description: "A data scrollytelling visualization about COVID travel", link:"https://evandenmark.github.io/ForSpaciousSkies/", image: "/images/spaciousskies.png"}, 
+        {name: "Civic Data Design Lab", year: "2020", description: "Data journalism work at MIT Urban Planning", link:"https://blog.civicdatadesignlab.mit.edu/h2a:-america's-essential-yet-unknown-program", image: "/images/cddl.png"}, 
+        
+        {name: "Cocoa Calypso", year: "2020",description: "Nomading North America through sound", link:"https://evandenmark.github.io/CocoaStorymap/", image: "/images/cocoa.png"}, 
+        
+        {name: "NatGeo DropCam", year: "2019",description: "Deep sea cameras in the Galapagos", link:"/natgeo", image: "/images/natgeo.png"},
+        {name: "Retinal Ritual", year: "2019",description: "Art installation at MIT's Under the Dome exhibit", link:"/retinalritual", image: "/images/retinalritual.png"}, 
+        {name: "Future Ocean Lab", year: "2019-2020",description: "Deep sea photogrammetry and AR app", link:"https://www.youtube.com/watch?v=NEfQTtMSXHQ", image: "/images/fol.png"}, 
+        
+        {name: "Incredibles 2", year: "2016-2018",description: "Technical lighting on the Oscar-nominated film",link:"https://www.imdb.com/name/nm9761816/", image: "/images/i2.png"}, 
+        {name: "Bloom Nepal", year: "2017",description: "A short film on innovative education in Nepal", link:"https://www.youtube.com/watch?v=F3zxuaIjTq0", image: "/images/bloom.png"}, 
+         
         
     ]
 
@@ -68,78 +80,44 @@ const Home = () => {
             </ul>
 
             <h1>Open Collaborations and Projects</h1>
-            <ul>
-            <li>
-                <AnswerProject 
-                    title={"Postcards"}
-                    time={"2024"}
-                    description={"COMING SOON: Let's hand deliver a postcard without Google Maps."}
-                    link={"/postcards"}
-                    />
-                </li>
-            <li>
-                <AnswerProject 
-                    title={"Future Ancestors"}
-                    time={"2023 - present"}
-                    description={"A creative sound archive to connect my family's voices through time"}
-                    link={'/futureancestors'}
-                    />
-                </li>
-            <li>
-                <AnswerProject 
-                    title={"Micronations"}
-                    time={"2022 - present"}
-                    description={"Is a nation a nation no matter how small?"}
-                    link={"/micronations"}
-                    />
-                </li>
-            </ul>
+            <div> 
+                <ul className={styles.projectList}> 
+                {collabs.map((c, index) => (
+                    <li
+                        key={index}
+                        className={styles.projectItem}
+                        style={{
+                            backgroundImage: `url(${c.image})`, 
+                        }}
+                    >
+                        <h2>{c.name}</h2>
+                        <p><b><i>{c.year}</i></b></p>
+                        <p>{c.description}</p>
+                    </li>
+                ))}
+                </ul>
+            </div>
 
             <h1>My Work</h1>
-            <ul>
-                <li>
-                    <AnswerProject 
-                        title={"Autio"}
-                        time={"2021"}
-                        description={"A place-based podcast travel mobile app"}
-                        link={"https://autio.com/"}
-                        />
-                </li>
 
-                <li>
-                    <AnswerProject 
-                        title={"For Spacious Skies"}
-                        time={"2020"}
-                        description={"A data scrollytelling visualization about travel during COVID"}
-                        link={"https://evandenmark.github.io/ForSpaciousSkies/"}
-                        />
-                </li>
-                <li>
-                    <AnswerProject 
-                        title={"Cocoa Calypso"}
-                        time={"2020-2021"}
-                        description={"Nomading North America through sound"}
-                        link={"https://evandenmark.github.io/CocoaStorymap/"}
-                        />
-                </li> 
-                <li>
-                    <AnswerProject 
-                        title={"Retinal Ritual"}
-                        time={"2019"}
-                        description={"Art installation at MIT's Under the Dome exhibit"}
-                        link={"/retinalritual"}
-                        />
-                </li>
-
-                <li>
-                    <AnswerProject 
-                        title={"Bloom Nepal"}
-                        time={"2017"}
-                        description={"A short film on innovative education in Nepal"}
-                        link={"https://www.youtube.com/watch?v=F3zxuaIjTq0"}
-                        />
-                </li>
-            </ul>
+            <div> 
+                <ul className={styles.projectList}> 
+                {projects.map((c, index) => (
+                    <li
+                        key={index}
+                        className={styles.projectItem}
+                        style={{
+                            backgroundImage: `url(${c.image})`, 
+                        }}
+                    >
+                        <h2>{c.name}</h2>
+                        <p><b><i>{c.year}</i></b></p>
+                        <p>{c.description}</p>
+                    </li>
+                ))}
+                </ul>
+            </div>
+            
 
 
             <h1>Expeditions and Residencies</h1>

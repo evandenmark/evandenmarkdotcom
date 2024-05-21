@@ -65,7 +65,7 @@ ul {
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 20px;
 }
 
@@ -73,7 +73,7 @@ ul {
 
 li {
     position: relative;
-    background-color: #ACE2E1;
+    /* background-color: #ACE2E1; */
     /* border-radius: 8px; */
     padding: 20px;
     display: flex;
@@ -101,6 +101,50 @@ li:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.projectList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+}
+
+.projectItem {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+    color: white; /* Ensure text is readable */
+    background-size: cover ;
+    background-position: center;
+    color: 'white';
+    padding: '20px';
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.projectItem::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5; /* Adjust the opacity as needed */
+    z-index: -1;
+}
+
+.projectItem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
 .affiliations {
     position: relative;
     /* border-radius: 8px; */
@@ -149,6 +193,7 @@ li:hover {
     /* max-height: 2; Adjust as needed */
     object-fit: cover; /* Ensures the image covers the specified dimensions */
 }
+
 
 
 

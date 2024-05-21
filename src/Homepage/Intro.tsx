@@ -32,6 +32,9 @@ const Intro = () => {
                             (appropriate doses of) tech, and indigenous wisdom to increase our connection
                             with the land, with our humanity, and with each other?"</i>
                         </p>
+                        <p className={styles.paragraph}>
+                            Today, I focus on audio.
+                        </p>
                     </div>
                     
                 </div>
