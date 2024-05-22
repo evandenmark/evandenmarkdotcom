@@ -1,14 +1,12 @@
 import styles from "./intro.module.css"
 
 import meImage from '../assets/images/me.jpeg'
-const Intro = () => {
 
-    const scrollToBottom = () => {
-        window.scrollTo({
-            top: document.documentElement.scrollHeight,
-            behavior: 'smooth', // Optional: adds smooth scrolling
-        });
-    };
+interface IntroParams {
+    navFunc: (link: string) => void
+}
+
+const Intro = ({navFunc} : IntroParams) => {
 
     return (
         <>
@@ -25,16 +23,18 @@ const Intro = () => {
                         <p className={styles.paragraph}>
                             I am a technical storyteller - i.e. a software engineer and multi-media journalist.
                         </p>
-                        <p className={styles.paragraph}> Born and raised by the ocean, I thrive in the <b><u onClick={scrollToBottom} style={{cursor: 'pointer'}}>intertidal zone</u></b>:
+                        <p className={styles.paragraph}> Born and raised by the ocean, I thrive in the <b><u onClick={() => navFunc('/intertidal')} style={{cursor: 'pointer'}}>intertidal zone</u></b>:
                             my work brings many worlds together and leans into their intersection.
                         </p>
-                        <p className={styles.paragraph}>I'm most interested in the question  <i>"how can we use storytelling, 
+                        <p className={styles.paragraph}>I'm most interested in the question:  <i>"how can we use storytelling, 
                             (appropriate doses of) tech, and indigenous wisdom to increase our connection
                             with the land, with our humanity, and with each other?"</i>
                         </p>
                         <p className={styles.paragraph}>
-                            Today, I focus on audio.
+                            Today, I focus on audio storytelling.
                         </p>
+
+                        
                     </div>
                     
                 </div>

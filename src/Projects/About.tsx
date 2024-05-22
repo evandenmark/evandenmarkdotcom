@@ -1,36 +1,62 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import styles from "./about.module.css"
+import { Link } from 'react-router-dom';
+import styles from "./pages.module.css"
 
 const About = () => {
     return <>
-            
-    <div className={styles.container}>
-        <div className={styles.textContainer}>
-            
-            <div className={styles.content}>
-                <p className={styles.paragraph}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vestibulum lectus mauris ultrices eros in cursus turpis. Egestas maecenas pharetra convallis posuere morbi leo urna molestie. Volutpat blandit aliquam etiam erat velit scelerisque in. Est velit egestas dui id ornare arcu odio ut. Congue mauris rhoncus aenean vel. Massa eget egestas purus viverra. Egestas fringilla phasellus faucibus scelerisque. Turpis egestas pretium aenean pharetra magna ac placerat. Ac ut consequat semper viverra nam libero justo laoreet. Commodo sed egestas egestas fringilla. Quis varius quam quisque id diam vel quam elementum pulvinar.
 
-               </p>
+        <div className={styles.menu}>
+            <nav>
+                <ul className={styles.navList}>
 
-               <p className={styles.paragraph}>
-               Bibendum neque egestas congue quisque egestas diam in. Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Et molestie ac feugiat sed lectus vestibulum. Sed libero enim sed faucibus turpis in eu. Bibendum enim facilisis gravida neque convallis a cras semper. Nam at lectus urna duis convallis convallis tellus. Magna ac placerat vestibulum lectus mauris ultrices. Consequat interdum varius sit amet. Tincidunt arcu non sodales neque sodales ut etiam sit. Consequat ac felis donec et odio pellentesque. Vulputate mi sit amet mauris. Venenatis tellus in metus vulputate eu scelerisque felis imperdiet. Gravida in fermentum et sollicitudin ac orci phasellus egestas tellus. Nunc sed velit dignissim sodales. Ipsum dolor sit amet consectetur adipiscing elit.
- 
-               </p>
+                    <li><Link to="/">My Work</Link></li>
+                    <li><Link to="/about">About</Link></li>
+                    <li><Link to="/intertidal">Intertidal</Link></li>
+                    <li><Link to="https://docs.google.com/document/d/1SKFlFGR8Am_kIG0-sL_NDgGAwZA2eXAljyl3XXZKHag/edit?usp=sharing" target="_blank">CV</Link></li>
 
-               <p className={styles.paragraph}>
-               Contact: evanlewisdenmark [at] gmail.com
-               </p>
-                
-                
+                </ul>
+            </nav>
+        </div>
+
+        <div className={styles.container}>
+            <div className={styles.textContainer}>
+
+                <div className={styles.content}>
+                    <p className={styles.paragraph}>
+                        <b>Evan Denmark</b> is a multi-media journalist with a technical background. His work focuses on how to use technology
+                        to enhance our connection with each other and the land, rather than (as we far too often see) to numb our relationship
+                        with the world around us. A trained computer scientist and software engineer, Evan uses his technical skills in a
+                        variety of media. While he intially found his techno-artistic outlet in visual media (film, visual arts, computer graphics, VR),
+                        he now focuses on investigative journalism and audio storytelling.
+                    </p>
+
+                    <p className={styles.paragraph}>
+                        Evan grew up on the shores of the pseudo-island Cape Cod, where he developed a deep reationship with the ocean, particularly the intertidal zone.
+                        Taking inspiration from this unique habitat, Evan seeks to find spaces of the "in-between": spaces that navigate
+                        the complex interdisciplinary (tech and storytelling, indigenous wisdom and modernity, etc...). He often plays the role
+                        of facilitator of those zones.
+                    </p>
+
+                    <p className={styles.paragraph}>
+                        He received his B.S. (2017) and
+                        MEng (2020) from <b>MIT</b> in Computer Science and Engineering. Evan has collaborated with and developed projects at
+                        Pixar, MIT Media Lab, National Geographic, Purple Mai'a, and various startups. He now lives in the pae'aina - the highly "intertidal"
+                        archipelago of Hawai'i - and thinks a lot about 'ai pono (food sovereignty) and malama 'aina (taking care of the land).
+                    </p>
+
+                    <p className={styles.paragraph}>
+                        Contact: evanlewisdenmark [at] gmail.com
+                    </p>
+
+
+                </div>
+
             </div>
-            
+            <div className={styles.imageWrapper}>
+                <img src={"/images/aboutphoto.png"} className={styles.image} />
+            </div>
         </div>
-        <div className={styles.imageWrapper}>
-            <img src={"/images/aboutphoto.png"} className={styles.image} />
-        </div>
-    </div>
-</>
+    </>
 }
 
 export default About;

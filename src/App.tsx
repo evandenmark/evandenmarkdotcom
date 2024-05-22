@@ -5,27 +5,47 @@ import './App.css';
 import { 
   Navigate, 
   Route,
-  Routes 
+  Routes, 
+  useNavigate
 } from "react-router-dom"; 
 import RetinalRitual from "./Projects/RetinalRitual";
 import Postcards from "./Projects/Postcards";
-import Micronations from "./Projects/Micronations";
 import NatGeo from "./Projects/NatGeo";
-import BoothRoad from "./Projects/BoothRoad";
 import About from "./Projects/About";
+import Intertidal from "./Projects/Intertidal";
+import Autio from "./Projects/Autio";
+import CDDL from "./Projects/CDDL";
+import Pixar from "./Projects/Pixar";
+import FOL from "./Projects/FOL"
 
 function App() {
+  const navigate = useNavigate();
+  const handleTitleClick = (link: string) => {
+    if (link) {
+        // Check if the link is external
+        if (/^(http|https):\/\//.test(link)) {
+            // External link: Navigate using window.location.href
+            window.open(link, '_blank');
+        } else {
+            // Internal link: Navigate using react-router-dom's navigate
+            navigate(link);
+        }
+    }
+};
   return ( 
     <> 
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/futureancestors" element={<FutureAncestors />} />
-            <Route path="/retinalritual" element={<RetinalRitual />} />
+            <Route path="/retinalritual" element={<RetinalRitual navFunc={handleTitleClick}/>} />
             <Route path="/postcards" element={<Postcards />} />
-            <Route path="/micronations" element={<Micronations />} />
-            <Route path="/natgeo" element={<NatGeo />} />
-            <Route path="/boothroad" element={<BoothRoad />} />
+            <Route path="/natgeo" element={<NatGeo navFunc={handleTitleClick}/>} />
+            <Route path="/intertidal" element={<Intertidal />} />
+            <Route path="/autio" element={<Autio navFunc={handleTitleClick}/>} />
+            <Route path="/cddl" element={<CDDL navFunc={handleTitleClick}/>} />
+            <Route path="/pixar" element={<Pixar navFunc={handleTitleClick}/>} />
+            <Route path="/fol" element={<FOL navFunc={handleTitleClick}/>} />
 
         </Routes>
     </> 

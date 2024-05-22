@@ -1,7 +1,6 @@
 import { useNavigate, Link } from "react-router-dom";
 import AnswerProject from "./AnswerProject";
-import IntertidalZone from "./IntertidalZone";
-import Intro from "./Intro";
+import Intro from "../Projects/Intro";
 import QuestionDropdown from "./QuestionDropdown";
 import styles from "./homepage.module.css";
 import { Paper } from "@mui/material";
@@ -38,32 +37,32 @@ const Home = () => {
     ]
 
     const affiliations = [
-        {name: "National Geographic", img: natgeo, link: "/natgeo"},
-        {name: "MIT Media Lab", img: medialab, link: "/"},
+        {name: "National Geographic", img: natgeo, link: "https://www.nationalgeographic.org/society/our-programs/lab/"},
+        {name: "MIT Media Lab", img: medialab, link: "https://www.media.mit.edu/"},
         {name: "Pixar", img: pixar, link:"https://www.imdb.com/name/nm9761816/"},
-        {name: "Purple Mai'a", img: purplemaia, link: "/natgeo"},
-        {name: "CDDL", img: cddl, link: "/natgeo"},
-        {name: "The Tech", img: thetech, link: "/natgeo"},
-        {name: "Autio", img: autio, link: "/natgeo"},
+        {name: "Purple Mai'a", img: purplemaia, link: "https://purplemaia.org/"},
+        {name: "CDDL", img: cddl, link: "https://civicdatadesignlab.mit.edu/"},
+        {name: "The Tech", img: thetech, link: "https://thetech.com"},
+        {name: "Autio", img: autio, link: "https://autio.com/"},
     ]
 
     const projects = [
         {name: "Future Ancestors", description: "A sound archive to connect my family's voices through time ", year: "2023-present", image:"images/futureancestors.png", link: "/futureancestors"},
         
-        {name: "Autio", year: "2021", description: "A place-based podcast mobile app", link:"https://autio.com/", image: "/images/autio.png"}, 
+        {name: "Autio", year: "2021", description: "A place-based podcast mobile app", link:"/autio", image: "/images/autio.png"}, 
         
         {name: "Cocoa Calypso", year: "2020",description: "Nomading North America through sound", link:"https://evandenmark.github.io/CocoaStorymap/", image: "/images/cocoa.png"}, 
     ]
 
     const visual = [
         {name: "For Spacious Skies", year: "2020",description: "A data scrollytelling visualization about COVID travel", link:"https://evandenmark.github.io/ForSpaciousSkies/", image: "/images/spaciousskies.png"}, 
-        {name: "Civic Data Design Lab", year: "2020", description: "Data journalism work at MIT Urban Planning", link:"https://blog.civicdatadesignlab.mit.edu/h2a:-america's-essential-yet-unknown-program", image: "/images/cddl.png"}, 
+        {name: "Civic Data Design Lab", year: "2020", description: "Data journalism work at MIT Urban Planning", link:"/cddl", image: "/images/cddl.png"}, 
         
         {name: "NatGeo DropCam", year: "2019",description: "Deep sea cameras in the Galapagos", link:"/natgeo", image: "/images/natgeo.png"},
         {name: "Retinal Ritual", year: "2019",description: "Art installation at MIT's Under the Dome exhibit", link:"/retinalritual", image: "/images/retinalritual.png"}, 
-        {name: "Future Ocean Lab", year: "2019-2020",description: "Deep sea photogrammetry and AR app", link:"https://www.youtube.com/watch?v=NEfQTtMSXHQ", image: "/images/fol.png"}, 
+        {name: "Future Ocean Lab", year: "2019-2020",description: "Deep sea photogrammetry and AR app", link:"/fol", image: "/images/fol.png"}, 
         
-        {name: "Incredibles 2", year: "2016-2018",description: "Technical lighting on the Oscar-nominated film",link:"https://www.imdb.com/name/nm9761816/", image: "/images/i2.png"}, 
+        {name: "Incredibles 2", year: "2016-2018",description: "Technical lighting on the Oscar-nominated film",link:"/pixar", image: "/images/i2.png"}, 
         {name: "Bloom Nepal", year: "2017",description: "A short film on innovative education in Nepal", link:"https://www.youtube.com/watch?v=F3zxuaIjTq0", image: "/images/bloom.png"}, 
          
     ]
@@ -74,16 +73,18 @@ const Home = () => {
             <div className={styles.menu}>
                 <nav>
                     <ul className={styles.navList}>
+
+                        <li><Link to="/">My Work</Link></li>
                         <li><Link to="/about">About</Link></li>
-                        <li><Link to="#my-work">My Work</Link></li>
-                        <li><Link to="https://docs.google.com/document/d/1SKFlFGR8Am_kIG0-sL_NDgGAwZA2eXAljyl3XXZKHag/edit?usp=sharing">CV</Link></li>
+                        <li><Link to="/intertidal">Intertidal</Link></li>
+                        <li><Link to="https://docs.google.com/document/d/1SKFlFGR8Am_kIG0-sL_NDgGAwZA2eXAljyl3XXZKHag/edit?usp=sharing" target="_blank">CV</Link></li>
                         
                     </ul>
                 </nav>
-            </div>`
+            </div>
 
 
-            <Intro/>
+            <Intro navFunc={handleTitleClick}/>
 
             <ul className={styles["affiliations-ul"]}>
                 {affiliations.map(aff => 
@@ -157,9 +158,6 @@ const Home = () => {
                 </ul>
             </div>
             
-            <div id="intertidal">
-                <IntertidalZone/>
-            </div>
 
             
         </div>
