@@ -29,7 +29,7 @@ const NatGeo = ({navFunc} : NatGeoParams) => {
                 <div className={styles.content}>
                     <p className={styles.paragraph}>
                         During my graduate ocean studies, I partnered with National Geographic's  
-                        <u onClick={() => navFunc('https://www.nationalgeographic.org/society/our-programs/lab/')} style={{cursor: 'pointer'}}> Exploration Technology Lab </u>
+                        <a onClick={() => navFunc('https://www.nationalgeographic.org/society/our-programs/lab/')} style={{cursor: 'pointer'}}> <u>Exploration Technology Lab</u> </a>
                         to launch a deep sea camera in the Galapagos Islands and acted as a resident scientist on board the 
                         Lindblad Expeditions vessel. The expedition was in collaboration with the MIT Media Lab Open Ocean Initiative. 
                     </p>

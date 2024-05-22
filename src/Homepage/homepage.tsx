@@ -1,7 +1,5 @@
 import { useNavigate, Link } from "react-router-dom";
-import AnswerProject from "./AnswerProject";
 import Intro from "../Projects/Intro";
-import QuestionDropdown from "./QuestionDropdown";
 import styles from "./homepage.module.css";
 import { Paper } from "@mui/material";
 import natgeo from "../assets/images/natgeo.png"

@@ -35,18 +35,18 @@ const Autio = ({navFunc} : AutioParams) => {
                     <p className={styles.paragraph}>
                         I wrote hundreds of the app's thousands of stories and even narrated a few. A few of my writing 
                         favorites are about my hometown's 
-                        <u onClick={() => navFunc('https://app.autio.com/stories/G9fmXAXXWpnNcWXAidyQ')} style={{cursor: 'pointer'}}> boardwalk</u>, 
+                        <a onClick={() => navFunc('https://app.autio.com/stories/G9fmXAXXWpnNcWXAidyQ')} style={{cursor: 'pointer'}}> <u>boardwalk</u></a>, 
                          an 
-                        <u onClick={() => navFunc('https://app.autio.com/stories/EASIxzUQNhH1VfOwcNWJ')} style={{cursor: 'pointer'}}> intertidal resident</u>, 
+                        <a onClick={() => navFunc('https://app.autio.com/stories/EASIxzUQNhH1VfOwcNWJ')} style={{cursor: 'pointer'}}> <u>intertidal resident</u></a>, 
                         and a nod to my  
-                        <u onClick={() => navFunc('https://app.autio.com/stories/s6PktMyORVbA0JoYOqD7')} style={{cursor: 'pointer'}}> vanlife </u> escapades. 
+                        <a onClick={() => navFunc('https://app.autio.com/stories/s6PktMyORVbA0JoYOqD7')} style={{cursor: 'pointer'}}> <u>vanlife</u> </a> escapades. 
                     </p>
 
                     <p className={styles.paragraph}>
                         A selection of my favorite narrations include a few from Idaho's 
-                        <u onClick={() => navFunc('https://app.autio.com/stories/1OhJHUzY1f8W9r4d2U15')} style={{cursor: 'pointer'}}> beauty </u>
+                        <a onClick={() => navFunc('https://app.autio.com/stories/1OhJHUzY1f8W9r4d2U15')} style={{cursor: 'pointer'}}> <u>beauty</u> </a>
                          and 
-                        <u onClick={() => navFunc('https://app.autio.com/stories/APrKEfBrmDSf3NvDLjZv')} style={{cursor: 'pointer'}}> peculiarities</u>.  
+                        <a onClick={() => navFunc('https://app.autio.com/stories/APrKEfBrmDSf3NvDLjZv')} style={{cursor: 'pointer'}}> <u>peculiarities</u></a>.  
                         </p>
 
 

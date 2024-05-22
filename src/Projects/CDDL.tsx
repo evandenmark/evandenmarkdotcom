@@ -35,7 +35,7 @@ const CDDL = ({navFunc} : CDDLParams) => {
 
                     <p className={styles.paragraph}>
                         During the summer, I managed the 
-                        <u onClick={() => navFunc('https://blog.civicdatadesignlab.mit.edu/')} style={{cursor: 'pointer'}}> Missing Data Project</u>, 
+                        <a onClick={() => navFunc('https://blog.civicdatadesignlab.mit.edu/')} style={{cursor: 'pointer'}}> <u>Missing Data Project</u></a>, 
                         a group of data scientists and journalists
                         interested in highlighting the gaps of nonexistent data. The CDDL is interested in the intersection
                         of data, design, and urban planning. 
@@ -44,8 +44,8 @@ const CDDL = ({navFunc} : CDDLParams) => {
                     <p className={styles.paragraph}>
                         In addition to managing the group and editing all posts, I produced two pieces myself
                         regarding farm labor under the H2A visa program, available
-                        <u onClick={() => navFunc("https://blog.civicdatadesignlab.mit.edu/h2a:-america's-essential-yet-unknown-program")} style={{cursor: 'pointer'}}> here </u>
-                        and <u onClick={() => navFunc('https://blog.civicdatadesignlab.mit.edu/h2a:-seeing-sketchiness-in-data')} style={{cursor: 'pointer'}}> here</u>. 
+                        <a onClick={() => navFunc("https://blog.civicdatadesignlab.mit.edu/h2a:-america's-essential-yet-unknown-program")} style={{cursor: 'pointer'}}> <u>here</u> </a>
+                        and <a onClick={() => navFunc('https://blog.civicdatadesignlab.mit.edu/h2a:-seeing-sketchiness-in-data')} style={{cursor: 'pointer'}}> <u>here</u></a>. 
                     </p>
 
 
@@ -54,7 +54,7 @@ const CDDL = ({navFunc} : CDDLParams) => {
 
             </div>
             <div className={styles.imageWrapper}>
-                <img src={"/images/cddl.png"} className={styles.image} />
+                <img src={"/images/cddl2.png"} className={styles.image} />
             </div>
         </div>
     </>

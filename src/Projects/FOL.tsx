@@ -28,7 +28,7 @@ const FOL = ({navFunc} : FOLParams) => {
                 <div className={styles.content}>
 
                     <p className={styles.paragraph}>
-                        During my <u onClick={() => navFunc('https://dspace.mit.edu/bitstream/handle/1721.1/129202/1227275209-MIT.pdf?sequence=1&isAllowed=y')} style={{cursor: 'pointer'}}> Master's thesis </u> 
+                        During my <a onClick={() => navFunc('https://dspace.mit.edu/bitstream/handle/1721.1/129202/1227275209-MIT.pdf?sequence=1&isAllowed=y')} style={{cursor: 'pointer'}}> <u>Master's thesis</u> </a> 
                         work at MIT, I was a part of the Future Ocean Lab, a start-up style
                         ocean technology lab hidden in an old, abandoned warehouse of Cambridge. The focus of the lab was to 
                         create low-cost robotics that enhance our relationship with the ocean. We partnered with the MIT Media Lab. 

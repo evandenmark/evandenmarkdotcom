@@ -3,6 +3,7 @@ import '../App.css';
 import {fullAudio, shortAudio,storyslamAudio} from "../assets/futureancestors/data"
 import useWindowDimensions, {shuffleArray} from "./utils"
 
+import styles from './futureancestors.module.css';
 
 import Header from "./Header";
 import GridSystem from "./GridSystem";
@@ -35,6 +36,7 @@ const FutureAncestors = () => {
     )
     
     return (
+        <div className={styles.futureAncestorsContainer}>
         <Paper
             elevation={0}
             sx={
@@ -74,6 +76,7 @@ const FutureAncestors = () => {
                 setFilter={setFilter}
             />
         </Paper>
+        </div>
     )
 }
 
