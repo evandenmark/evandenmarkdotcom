@@ -2,7 +2,12 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import styles from "./pages.module.css"
 
-const About = () => {
+interface AboutParams {
+    navFunc: (link: string) => void
+}
+
+
+const About = ({navFunc} : AboutParams) => {
     return <>
 
         <div className={styles.menu}>
@@ -46,6 +51,12 @@ const About = () => {
 
                     <p className={styles.paragraph}>
                         Contact: evanlewisdenmark [at] gmail.com
+                    </p>
+                    <p className={styles.paragraph}>
+                        <a onClick={() => navFunc('https://github.com/evandenmark')} style={{cursor: 'pointer'}}> <u>Github</u></a>
+                    </p>
+                    <p className={styles.paragraph}>
+                        <a onClick={() => navFunc('https://www.imdb.com/name/nm9761816/')} style={{cursor: 'pointer'}}> <u>IMDB</u></a>
                     </p>
 
 
