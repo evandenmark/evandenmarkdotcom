@@ -137,42 +137,6 @@ const Home = () => {
                             </li>
                         </ul>
                     </div>
-                    {/* <ul className={styles.projectList}>
-                        
-                        <li
-                                key={index}
-                                className={styles.projectItem}
-                                style={{
-                                    backgroundImage: `url(${c.image})`,
-                                }}
-                                onClick={() => handleTitleClick(c.link)}
-                            >
-                                <h2>{c.name}</h2>
-                                <p><b><i>{c.year}</i></b></p>
-                                <p>{c.description}</p>
-                            </li>
-                        {collabs.map((c, index) => (
-                            <li
-                                key={index}
-                                className={styles.projectItem}
-                                style={{
-                                    backgroundImage: `url(${c.image})`,
-                                }}
-                                onClick={() => handleTitleClick(c.link)}
-                            >
-                                <h2>{c.name}</h2>
-                                <p><b><i>{c.year}</i></b></p>
-                                <p>{c.description}</p>
-                            </li>
-                        ))}
-                        <li>
-                            <h2>Listen to the Trailer</h2>
-                            <audio controls >
-                                <source src={"/audio/trailer_final.mp3"} type="audio/mpeg" />
-                                Your browser does not support the audio tag.
-                            </audio>
-                        </li>
-                    </ul> */}
                 </div>
 
                 <h1>Audio </h1>

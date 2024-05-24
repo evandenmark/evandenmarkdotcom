@@ -26,7 +26,7 @@ const FOL = ({navFunc} : FOLParams) => {
             <div className={styles.textContainer}>
 
                 <div className={styles.content}>
-
+                    <h2> Future Ocean Lab</h2>
                     <p className={styles.paragraph}>
                         During my <a onClick={() => navFunc('https://dspace.mit.edu/bitstream/handle/1721.1/129202/1227275209-MIT.pdf?sequence=1&isAllowed=y')} style={{cursor: 'pointer'}}> <u>Master's thesis</u> </a> 
                         work at MIT, I was a part of the Future Ocean Lab, a start-up style
