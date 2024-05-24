@@ -10,6 +10,7 @@ import cddl from "../assets/images/cddl.png"
 import autio from "../assets/images/autio.png"
 import thetech from "../assets/images/thetech.png"
 import zIndex from "@mui/material/styles/zIndex";
+// import postcards_trailer from "/audio/trailer_final.mp3"
 
 
 const Home = () => {
@@ -94,9 +95,62 @@ const Home = () => {
                 </ul>
 
                 <h1>Active Projects</h1>
-                <h3>"in-the-pipeline" work looking for funding and collaborators </h3>
+                <p>"in-the-pipeline" work looking for funding and collaborators </p>
                 <div id={"my-work"}>
-                    <ul className={styles.projectList}>
+                    <div style={{ alignItems: "center" }}>
+                        <ul>
+                            <li>
+                                <img src={"/images/postcardart.png"}></img>
+                            </li>
+                            <li style={{ alignItems: "center" }}>
+                                <h2>The Post Man</h2>
+                                <p><i>An audio documentary to deliver a postcard...without Google Maps</i></p>
+
+                                <p>Listen to the Trailer</p>
+                                <audio controls >
+                                    <source src={"/audio/trailer_final.mp3"} type="audio/mpeg" />
+                                    Your browser does not support the audio tag.
+                                </audio>
+                            </li>
+                            <li style={{
+                                display: "flex",
+                                justifyContent: "center",
+                                flexDirection: "row",
+                                alignItems: "center",
+                                marginTop: 40
+                            }}>
+                                <button
+                                    onClick={() => handleTitleClick("/postcards")}
+                                    style={{
+                                        // alignSelf: "start",
+                                        alignContent: "center",
+                                        fontSize: "30px",
+                                        display: "flex",
+                                        color: "#fff",
+                                        backgroundColor: "#ff2b2b",
+                                        border: "none",
+                                        borderRadius: "4px",
+                                        cursor: "pointer",
+                                        transition: "background-color 0.3s",
+                                    }}
+                                ><h3>Learn More</h3> </button>
+                            </li>
+                        </ul>
+                    </div>
+                    {/* <ul className={styles.projectList}>
+                        
+                        <li
+                                key={index}
+                                className={styles.projectItem}
+                                style={{
+                                    backgroundImage: `url(${c.image})`,
+                                }}
+                                onClick={() => handleTitleClick(c.link)}
+                            >
+                                <h2>{c.name}</h2>
+                                <p><b><i>{c.year}</i></b></p>
+                                <p>{c.description}</p>
+                            </li>
                         {collabs.map((c, index) => (
                             <li
                                 key={index}
@@ -111,7 +165,14 @@ const Home = () => {
                                 <p>{c.description}</p>
                             </li>
                         ))}
-                    </ul>
+                        <li>
+                            <h2>Listen to the Trailer</h2>
+                            <audio controls >
+                                <source src={"/audio/trailer_final.mp3"} type="audio/mpeg" />
+                                Your browser does not support the audio tag.
+                            </audio>
+                        </li>
+                    </ul> */}
                 </div>
 
                 <h1>Audio </h1>
@@ -157,7 +218,7 @@ const Home = () => {
                 </div>
 
             </div>
-        </Paper>
+        </Paper >
     )
 }
 

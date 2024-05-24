@@ -39,7 +39,7 @@ function App() {
             <Route path="/about" element={<About navFunc={handleTitleClick}/>} />
             <Route path="/futureancestors" element={<FutureAncestors />} />
             <Route path="/retinalritual" element={<RetinalRitual navFunc={handleTitleClick}/>} />
-            <Route path="/postcards" element={<Postcards />} />
+            <Route path="/postcards" element={<Postcards navFunc={handleTitleClick}/>} />
             <Route path="/natgeo" element={<NatGeo navFunc={handleTitleClick}/>} />
             <Route path="/intertidal" element={<Intertidal />} />
             <Route path="/autio" element={<Autio navFunc={handleTitleClick}/>} />
