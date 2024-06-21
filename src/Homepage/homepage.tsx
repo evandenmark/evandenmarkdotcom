@@ -63,6 +63,7 @@ const Home = () => {
 
         { name: "Incredibles 2", year: "2016-2018", description: "Technical lighting on the Oscar-nominated film", link: "/pixar", image: "/images/i2.png" },
         { name: "Bloom Nepal", year: "2017", description: "A short film on innovative education in Nepal", link: "https://www.youtube.com/watch?v=F3zxuaIjTq0", image: "/images/bloom.png" },
+        { name: "YouTube", description: "short documentaries",link: "https://www.youtube.com/channel/UCD5-TrhD1QOVLC7cHUWRvQw", image: "/images/youtube.png" }
 
     ]
 
