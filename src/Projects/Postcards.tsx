@@ -36,8 +36,8 @@ const Postcards = ({ navFunc }: PostcardsParams) => {
                     </p>
 
                     <p className={styles.paragraph}>
-                        I'm currently on draft #3 of an audio documentary telling the story of the delivery process... and a
-                        journey makes highlights how connected we actually are.
+                        I'm currently on my final draft of an audio documentary that tells the story of the delivery process... and a
+                        journey highlights how connected we actually are.
                     </p>
 
                     <h2>LISTEN TO THE TRAILER: </h2>
@@ -49,10 +49,9 @@ const Postcards = ({ navFunc }: PostcardsParams) => {
                     <p className={styles.paragraph}>
                         If you are intrigued, I am currently searching for TWO THINGS:
                     </p>
-                    <p>1. A <b>co-producer</b> and sound designer to help me make this product a reality. The goal is
-                        to get it on an outlet like NPR, Radiolab, or something of the like.
+                    <p>1. A <b>media outlet</b> to get this project on the airwaves. Think NPR, Radiolab, and the like.
                     </p>
-                    <p>2. <b>Funding</b> for something even bigger. This 40 min doc is actually the pilot for a 4 part series.
+                    <p>2. <b>Funding</b> for something even bigger. This 38 min doc is actually the pilot for a 4 part series.
                         The next three episodes, which I've already laid the infrastructure for, are going to get increasingly crazier (spoiler).
                     </p>
 

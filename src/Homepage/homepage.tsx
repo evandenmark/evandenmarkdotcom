@@ -96,7 +96,6 @@ const Home = () => {
                 </ul>
 
                 <h1>Active Projects</h1>
-                <p>"in-the-pipeline" work looking for funding and collaborators </p>
                 <div id={"my-work"}>
                     <div style={{ alignItems: "center" }}>
                         <ul>

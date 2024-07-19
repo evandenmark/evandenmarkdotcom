@@ -59,6 +59,16 @@
     margin: 0 0px;
 }
 
+a {
+    color: rgb(178, 211, 253);
+    text-decoration: none; /* optional: removes the underline */
+}
+
+a:hover {
+    color: rgb(95, 182, 253); /* optional: changes color on hover */
+}
+
+
 .navList a {
     color: white;
     text-decoration: none;

@@ -21,7 +21,7 @@ const Intro = ({navFunc} : IntroParams) => {
                     </div>
                     <div className={styles.content}>
                         <p className={styles.paragraph}>
-                            I am a technical storyteller - i.e. a software engineer and multi-media journalist.
+                            I am a technical storyteller - i.e. a software engineer, multi-media journalist, and educator.
                         </p>
                         <p className={styles.paragraph}> Born and raised by the ocean, I thrive in the <b><u onClick={() => navFunc('/intertidal')} style={{cursor: 'pointer'}}>intertidal zone</u></b>:
                             my work brings many worlds together and leans into their intersection.
@@ -29,9 +29,6 @@ const Intro = ({navFunc} : IntroParams) => {
                         <p className={styles.paragraph}>I'm most interested in the question:  <i>"how can we use storytelling, 
                             (appropriate doses of) tech, and indigenous wisdom to increase our connection
                             with the land, with our humanity, and with each other?"</i>
-                        </p>
-                        <p className={styles.paragraph}>
-                            Today, I focus on audio storytelling.
                         </p>
 
                         

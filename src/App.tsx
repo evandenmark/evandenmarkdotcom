@@ -17,6 +17,7 @@ import Autio from "./Projects/Autio";
 import CDDL from "./Projects/CDDL";
 import Pixar from "./Projects/Pixar";
 import FOL from "./Projects/FOL"
+import Brilliant from "./Projects/Brilliant"
 
 function App() {
   const navigate = useNavigate();
@@ -46,6 +47,7 @@ function App() {
             <Route path="/cddl" element={<CDDL navFunc={handleTitleClick}/>} />
             <Route path="/pixar" element={<Pixar navFunc={handleTitleClick}/>} />
             <Route path="/fol" element={<FOL navFunc={handleTitleClick}/>} />
+            <Route path="/brilliant" element={<Brilliant navFunc={handleTitleClick}/>} />
 
         </Routes>
     </> 
