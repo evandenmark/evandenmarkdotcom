@@ -39,7 +39,7 @@ const Header = (
         <Paper 
             sx={{
                 // padding: 10, 
-                // marginLeft: 20,
+                marginTop: 0,
                 // marginRight: 20,
                 alignItems:"center",
                 justifyContent:"space-between",
@@ -52,10 +52,10 @@ const Header = (
                 <>
                 <div className={"header-div"}>
                     <div id={"title"}>
-                        <p> F U T U R E <b> A N C E S T O R S </b></p>
+                        <p style={{color: "black"}}> F U T U R E <b> A N C E S T O R S </b></p>
                     </div>
                     <div id={"subtitle"}>
-                        <p><i>connecting our voices through time</i></p>
+                        <p style={{color: "black"}}><i>connecting our voices through time</i></p>
                     </div>
                 </div>
                 <Stack spacing={2}>

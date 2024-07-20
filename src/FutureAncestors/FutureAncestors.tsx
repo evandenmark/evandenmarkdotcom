@@ -36,7 +36,7 @@ const FutureAncestors = () => {
     )
     
     return (
-        <div className={styles.futureAncestorsContainer}>
+        <div style={{backgroundColor: "white"}}>
         <Paper
             elevation={0}
             sx={

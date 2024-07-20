@@ -33,7 +33,7 @@ const Brilliant = ({navFunc} : BrilliantParams) => {
 
                     <b> <u>Teaching Curricula</u></b>
                     <p>In grad school, my focus was the process of photogrammetry - the reconstruction of 3D models from 2D photos - and how to use those 3D models for something educational (augmented reality apps). 
-                        In short, I wanted to "open-sourcify" the process of photogrammetry mobile apps, particularly for students and curious adults. 
+                        In short, my goal was to "open-sourcify" the process of creating photogrammetry-based mobile apps, particularly for students and curious adults. 
                     </p>
                     <p> 
                         As a result, I created many guides for a various audiences, explaining the entire process from planning the photography shoot to developing your own app with the created models. Here are a few: 
@@ -101,7 +101,7 @@ const Brilliant = ({navFunc} : BrilliantParams) => {
                         </li>
                     </ol>
 
-                    <p>Many other storytelling projects - less so science communication - can be found on the My Work page.</p>
+                    <p>Many other storytelling projects can be found on the <a href="https://evandenmark.com"> My Work </a>page.</p>
 
 
 
