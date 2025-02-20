@@ -1,7 +1,7 @@
 import { useNavigate, Link } from "react-router-dom";
 import Intro from "../Projects/Intro";
 import styles from "./homepage.module.css";
-import { Paper } from "@mui/material";
+import { Paper, Stack } from "@mui/material";
 import natgeo from "../assets/images/natgeo.png"
 import purplemaia from "../assets/images/purplemaia.png"
 import pixar from "../assets/images/pixar.png"
@@ -97,29 +97,25 @@ const Home = () => {
 
                 <h1>Active Projects</h1>
                 <div id={"my-work"}>
-                    <div style={{ alignItems: "center" }}>
-                        <ul>
-                            <li>
-                                <img src={"/images/postcardart.png"}></img>
-                            </li>
-                            <li style={{ alignItems: "center" }}>
+                    <div style={{ alignItems: "center",display: "flex", justifyContent: "center" , width: "100%"}}>
+                        <Stack
+                            alignItems="center"
+                             alignContent="center" >
                                 <h2>Post Office Magic</h2>
+                                
                                 <p><i>An audio documentary to deliver a postcard...without Google Maps</i></p>
+                                
+                                <iframe 
+                                    src="https://open.spotify.com/embed/episode/48W7r1PCKQhiGJmTou2eAs?utm_source=generator" 
+                                    width="100%" 
+                                    height="152" 
+                                    frameBorder="0" 
+                                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                                    loading="lazy">
 
-                                <p>Listen to the Trailer</p>
-                                <audio controls >
-                                    <source src={"/audio/trailer_final.mp3"} type="audio/mpeg" />
-                                    Your browser does not support the audio tag.
-                                </audio>
-                            </li>
-                            <li style={{
-                                display: "flex",
-                                justifyContent: "center",
-                                flexDirection: "row",
-                                alignItems: "center",
-                                marginTop: 40
-                            }}>
-                                <button
+                                    </iframe>
+
+                                    <button
                                     onClick={() => handleTitleClick("/postcards")}
                                     style={{
                                         // alignSelf: "start",
@@ -134,8 +130,7 @@ const Home = () => {
                                         transition: "background-color 0.3s",
                                     }}
                                 ><h3>Learn More</h3> </button>
-                            </li>
-                        </ul>
+                                </Stack>
                     </div>
                 </div>
 
