@@ -30,7 +30,7 @@ const Home = () => {
     };
 
     const collabs = [
-        { name: "The Post Man", description: "An audio documentary about the delivery of a postcard...without Google Maps", year: "2024", image: "images/postcards3.png", link: "/postcards" },
+        { name: "Post Office Magic", description: "An audio documentary about the delivery of a postcard...without Google Maps", year: "2024", image: "images/postcards3.png", link: "/postcards" },
         // {name: "Micronations", description: "Is a nation a nation no matter how small?", year: "2022-present", image:"images/micronations.png", link: "/micronations"}
 
     ]
@@ -103,7 +103,7 @@ const Home = () => {
                                 <img src={"/images/postcardart.png"}></img>
                             </li>
                             <li style={{ alignItems: "center" }}>
-                                <h2>The Post Man</h2>
+                                <h2>Post Office Magic</h2>
                                 <p><i>An audio documentary to deliver a postcard...without Google Maps</i></p>
 
                                 <p>Listen to the Trailer</p>
