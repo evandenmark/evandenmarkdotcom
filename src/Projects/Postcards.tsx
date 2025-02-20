@@ -1,10 +1,32 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useRef, useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import styles from "./pages.module.css"
 
 interface PostcardsParams {
     navFunc: (link: string) => void
 }
+
+const PRXAudioPlayer = () => {
+  const playerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!playerRef.current) return;
+
+    // Remove existing script if present
+    document.getElementById("prx-p562324-embed")?.remove();
+
+    // Create new script element
+    const script = document.createElement("script");
+    script.id = "prx-p562324-embed";
+    script.src = "https://play.prx.org/e?uf=https://exchange.prx.org/p/562324/embed.js?size=small";
+    script.async = true;
+
+    playerRef.current.appendChild(script);
+  }, []);
+
+  return <div ref={playerRef} />;
+};
+
 
 
 const Postcards = ({ navFunc }: PostcardsParams) => {
@@ -36,16 +58,27 @@ const Postcards = ({ navFunc }: PostcardsParams) => {
                     </p>
 
                     <h2>THE TRAILER: </h2>
-                    <audio controls >
-                        <source src={"/audio/trailer_final.mp3"} type="audio/mpeg" />
-                        Your browser does not support the audio tag.
-                    </audio>
+                    <iframe 
+                        src="https://open.spotify.com/embed/episode/48W7r1PCKQhiGJmTou2eAs?utm_source=generator" 
+                        width="100%" 
+                        height="152" 
+                        frameBorder="0" 
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                        loading="lazy">
+
+                        </iframe>
 
                     <h2>THE FULL 37 MINUTE PIECE</h2>
-                    <audio controls >
-                        <source src={"/audio/postofficemagic.mp3"} type="audio/mpeg" />
-                        Your browser does not support the audio tag.
-                    </audio>
+                    <iframe 
+                        src="https://open.spotify.com/embed/episode/0QALfnHOGIwSsMrV4sCXae?utm_source=generator&t=0" 
+                        width="100%" 
+                        height="152" 
+                        frameBorder="0" 
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                        loading="lazy">
+
+                        </iframe>
+                    
                     
                     <p className={styles.paragraph}>
                         If you are intrigued, I am currently searching for TWO THINGS:
