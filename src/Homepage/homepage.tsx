@@ -140,7 +140,7 @@ const Home = () => {
 
                 <div style={{ paddingTop: 30, alignItems: "center",display: "flex", justifyContent: "center" , width: "100%"}}>
                    <button
-                    onClick={() => handleTitleClick("/mywork")}
+                    onClick={() => {handleTitleClick("/mywork");  window.scrollTo(0, 0)}}
                     style={{
                         alignSelf: "start",
                         alignContent: "center",
