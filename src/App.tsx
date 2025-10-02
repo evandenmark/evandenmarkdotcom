@@ -18,6 +18,9 @@ import CDDL from "./Projects/CDDL";
 import Pixar from "./Projects/Pixar";
 import FOL from "./Projects/FOL"
 import Brilliant from "./Projects/Brilliant"
+import Speaking from "./Projects/Speaking";
+import MyWork from "./Projects/MyWork";
+import Schmidt from "./Projects/Schmidt";
 
 function App() {
   const navigate = useNavigate();
@@ -38,6 +41,8 @@ function App() {
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About navFunc={handleTitleClick}/>} />
+            <Route path="/mywork" element={<MyWork navFunc={handleTitleClick}/>} />
+            <Route path="/schmidtsciences" element={<Schmidt navFunc={handleTitleClick}/>} />
             <Route path="/futureancestors" element={<FutureAncestors />} />
             <Route path="/retinalritual" element={<RetinalRitual navFunc={handleTitleClick}/>} />
             <Route path="/postcards" element={<Postcards navFunc={handleTitleClick}/>} />
@@ -47,6 +52,7 @@ function App() {
             <Route path="/cddl" element={<CDDL navFunc={handleTitleClick}/>} />
             <Route path="/pixar" element={<Pixar navFunc={handleTitleClick}/>} />
             <Route path="/fol" element={<FOL navFunc={handleTitleClick}/>} />
+            <Route path="/speaking" element={<Speaking />} />
             <Route path="/brilliant" element={<Brilliant navFunc={handleTitleClick}/>} />
 
         </Routes>

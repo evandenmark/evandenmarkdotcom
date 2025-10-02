@@ -9,7 +9,9 @@ import medialab from "../assets/images/medialab.png"
 import cddl from "../assets/images/cddl.png"
 import autio from "../assets/images/autio.png"
 import thetech from "../assets/images/thetech.png"
+import schmidt from "../assets/images/schmidt.png"
 import zIndex from "@mui/material/styles/zIndex";
+import MyWork from "../Projects/MyWork";
 // import postcards_trailer from "/audio/trailer_final.mp3"
 
 
@@ -40,8 +42,8 @@ const Home = () => {
         { name: "MIT Media Lab", img: medialab, link: "https://www.media.mit.edu/" },
         { name: "Pixar", img: pixar, link: "https://www.imdb.com/name/nm9761816/" },
         { name: "Purple Mai'a", img: purplemaia, link: "https://purplemaia.org/" },
-        { name: "CDDL", img: cddl, link: "https://civicdatadesignlab.mit.edu/" },
-        { name: "The Tech", img: thetech, link: "https://thetech.com" },
+        { name: "Schmidt Sciences", img: schmidt, link: "https://www.schmidtsciences.org/" },
+        { name: "Civic Data Design Lab", img: cddl, link: "https://civicdatadesignlab.mit.edu/" },
         { name: "Autio", img: autio, link: "https://autio.com/" },
     ]
 
@@ -54,15 +56,15 @@ const Home = () => {
     ]
 
     const visual = [
-        { name: "For Spacious Skies", year: "2020", description: "A data scrollytelling visualization about COVID travel", link: "https://evandenmark.github.io/ForSpaciousSkies/", image: "/images/spaciousskies.png" },
-        { name: "Civic Data Design Lab", year: "2020", description: "Data journalism work at MIT Urban Planning", link: "/cddl", image: "/images/cddl.png" },
+        { name: "For Spacious Skies", description: "A data scrollytelling visualization about COVID travel", link: "https://evandenmark.github.io/ForSpaciousSkies/", image: "/images/spaciousskies.png" },
+        { name: "Civic Data Design Lab", description: "Data journalism work at MIT Urban Planning", link: "/cddl", image: "/images/cddl.png" },
 
-        { name: "NatGeo DropCam", year: "2019", description: "Deep sea cameras in the Galapagos", link: "/natgeo", image: "/images/natgeo.png" },
-        { name: "Retinal Ritual", year: "2019", description: "Art installation at MIT's Under the Dome exhibit", link: "/retinalritual", image: "/images/retinalritual.png" },
-        { name: "Future Ocean Lab", year: "2019-2020", description: "Deep sea photogrammetry and AR app", link: "/fol", image: "/images/fol.png" },
+        { name: "NatGeo DropCam",  description: "Deep sea cameras in the Galapagos", link: "/natgeo", image: "/images/natgeo.png" },
+        { name: "Retinal Ritual", description: "Art installation at MIT's Under the Dome exhibit", link: "/retinalritual", image: "/images/retinalritual.png" },
+        { name: "Future Ocean Lab",  description: "Deep sea photogrammetry and AR app", link: "/fol", image: "/images/fol.png" },
 
-        { name: "Incredibles 2", year: "2016-2018", description: "Technical lighting on the Oscar-nominated film", link: "/pixar", image: "/images/i2.png" },
-        { name: "Bloom Nepal", year: "2017", description: "A short film on innovative education in Nepal", link: "https://www.youtube.com/watch?v=F3zxuaIjTq0", image: "/images/bloom.png" },
+        { name: "Incredibles 2", description: "Technical lighting on the Oscar-nominated film", link: "/pixar", image: "/images/i2.png" },
+        { name: "Bloom Nepal", description: "A short film on innovative education in Nepal", link: "https://www.youtube.com/watch?v=F3zxuaIjTq0", image: "/images/bloom.png" },
         { name: "YouTube", description: "short documentaries",link: "https://www.youtube.com/channel/UCD5-TrhD1QOVLC7cHUWRvQw", image: "/images/youtube.jpg" }
 
     ]
@@ -74,7 +76,7 @@ const Home = () => {
                     <nav>
                         <ul className={styles.navList}>
 
-                            <li><Link to="/">My Work</Link></li>
+                            <li><Link to="/">Home</Link></li>
                             <li><Link to="/about">About</Link></li>
                             <li><Link to="/intertidal">Intertidal</Link></li>
                             <li><Link to="https://docs.google.com/document/d/1SKFlFGR8Am_kIG0-sL_NDgGAwZA2eXAljyl3XXZKHag/edit?usp=sharing" target="_blank">CV</Link></li>
@@ -95,88 +97,68 @@ const Home = () => {
 
                 </ul>
 
-                <h1>Active Projects</h1>
+               
+
+                <h1></h1>
                 <div id={"my-work"}>
-                    <div style={{ alignItems: "center",display: "flex", justifyContent: "center" , width: "100%"}}>
+                    <div style={{ width: "100%"}}>
                         <Stack
-                            alignItems="center"
-                             alignContent="center" >
-                                <h2>Post Office Magic</h2>
-                                
-                                <p><i>An audio documentary to deliver a postcard...without Google Maps</i></p>
-                                
-                                <iframe 
-                                    src="https://open.spotify.com/embed/episode/48W7r1PCKQhiGJmTou2eAs?utm_source=generator" 
-                                    width="100%" 
-                                    height="152" 
-                                    frameBorder="0" 
-                                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-                                    loading="lazy">
+                            direction={"row"}
+                            alignItems="flex-start"
+                            display="flex" 
+                            justifyContent="center"  
+                            spacing={25}
+                            >
+                                <div style={{textAlign: "center"}}>
+                                    <h2>Post Office Magic</h2>
+                                    
+                                    <p><i>An <a href="https://open.spotify.com/episode/0QALfnHOGIwSsMrV4sCXae?si=d1fbac8384474056" target="_blank" rel="noopener noreferrer">audio documentary</a> to deliver a postcard...without Google Maps</i></p>
+                                    
+                                    <iframe 
+                                        src="https://open.spotify.com/embed/episode/48W7r1PCKQhiGJmTou2eAs?utm_source=generator" 
+                                        width="100%" 
+                                        height="350" 
+                                        frameBorder="0" 
+                                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                                        loading="lazy">
 
-                                    </iframe>
+                                        </iframe>
+                                        
+                                </div>
 
-                                    <button
-                                    onClick={() => handleTitleClick("/postcards")}
-                                    style={{
-                                        // alignSelf: "start",
-                                        alignContent: "center",
-                                        fontSize: "30px",
-                                        display: "flex",
-                                        color: "#fff",
-                                        backgroundColor: "#ff2b2b",
-                                        border: "none",
-                                        borderRadius: "4px",
-                                        cursor: "pointer",
-                                        transition: "background-color 0.3s",
-                                    }}
-                                ><h3>Learn More</h3> </button>
+                                <div style={{textAlign: "center"}}>
+                                    <h2>Schmidt Sciences</h2>
+                                    <p><i>A <a href="/#/schmidtsciences" onClick={() => window.scrollTo(0, 0)}>series</a> of animated videos about the foundation's cutting edge science</i></p>
+                                    <iframe src="https://drive.google.com/file/d/1ibBvNatw42GwsBKm8k0mrkZgu16xmTow/preview" 
+                                        width="500" height="281" allow="autoplay"></iframe>
+                                </div>
                                 </Stack>
                     </div>
+
                 </div>
 
-                <h1>Audio </h1>
 
-                <div>
-                    <ul className={styles.projectList}>
-                        {projects.map((p, index) => (
-                            <li
-                                key={index}
-                                className={styles.projectItem}
-                                style={{
-                                    backgroundImage: `url(${p.image})`,
-                                }}
-                                onClick={() => handleTitleClick(p.link)}
-                            >
-                                <h2>{p.name}</h2>
-                                <p><b><i>{p.year}</i></b></p>
-                                <p>{p.description}</p>
-                            </li>
-                        ))}
-                    </ul>
+                <div style={{ paddingTop: 30, alignItems: "center",display: "flex", justifyContent: "center" , width: "100%"}}>
+                   <button
+                    onClick={() => handleTitleClick("/mywork")}
+                    style={{
+                        alignSelf: "start",
+                        alignContent: "center",
+                        fontSize: "30px",
+                        display: "flex",
+                        color: "#fff",
+                        backgroundColor: "#131313",
+                        border: "1px solid #fff",
+                        borderRadius: "4px",
+                        cursor: "pointer",
+                        transition: "background-color 0.3s",
+                    }}
+                ><h3> Full Portfolio</h3> </button> 
                 </div>
-
-                <h1>Visual</h1>
-
-                <div>
-                    <ul className={styles.projectList}>
-                        {visual.map((p, index) => (
-                            <li
-                                key={index}
-                                className={styles.projectItem}
-                                style={{
-                                    backgroundImage: `url(${p.image})`,
-                                }}
-                                onClick={() => handleTitleClick(p.link)}
-                            >
-                                <h2>{p.name}</h2>
-                                <p><b><i>{p.year}</i></b></p>
-                                <p>{p.description}</p>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
+                
 
             </div>
+            
         </Paper >
     )
 }

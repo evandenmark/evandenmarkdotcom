@@ -21,14 +21,14 @@ const Intro = ({navFunc} : IntroParams) => {
                     </div>
                     <div className={styles.content}>
                         <p className={styles.paragraph}>
-                            I am a technical storyteller - i.e. a software engineer, multi-media journalist, and educator.
+                            I am a technical storyteller - i.e. a software engineer, media producer, and communicator.
                         </p>
                         <p className={styles.paragraph}> Born and raised by the ocean, I thrive in the <b><u onClick={() => navFunc('/intertidal')} style={{cursor: 'pointer'}}>intertidal zone</u></b>:
                             my work brings many worlds together and leans into their intersection.
                         </p>
-                        <p className={styles.paragraph}>I'm most interested in the question:  <i>"how can we use storytelling, 
-                            (appropriate doses of) tech, and indigenous wisdom to increase our connection
-                            with the land, with our humanity, and with each other?"</i>
+                        <p className={styles.paragraph}>I'm most interested in the question:  <i>how can technology enhance our storytelling?</i>
+                        </p>
+                        <p className={styles.paragraph}><i>...and how can storytelling enhance our tech?</i>
                         </p>
 
                         

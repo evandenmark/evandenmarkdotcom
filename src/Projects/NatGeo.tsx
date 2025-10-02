@@ -14,7 +14,7 @@ const NatGeo = ({navFunc} : NatGeoParams) => {
             <nav>
                 <ul className={styles.navList}>
 
-                    <li><Link to="/">My Work</Link></li>
+                    <li><Link to="/">Home</Link></li>
                     <li><Link to="/about">About</Link></li>
                     <li><Link to="/intertidal">Intertidal</Link></li>
                     <li><Link to="https://docs.google.com/document/d/1SKFlFGR8Am_kIG0-sL_NDgGAwZA2eXAljyl3XXZKHag/edit?usp=sharing" target="_blank">CV</Link></li>
