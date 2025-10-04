@@ -100,41 +100,85 @@ const Home = () => {
                
 
                 <h1></h1>
-                <div id={"my-work"}>
-                    <div style={{ width: "100%"}}>
-                        <Stack
-                            direction={"row"}
-                            alignItems="flex-start"
-                            display="flex" 
-                            justifyContent="center"  
-                            spacing={25}
+                <div id="my-work">
+                <div style={{ width: "100%" }}>
+                    <Stack
+                    direction={{ xs: "column", md: "row" }} // column on mobile, row on desktop
+                    alignItems={{ xs: "center", md: "flex-start" }}
+                    justifyContent="center"
+                    spacing={{ xs: 4, md: 25 }}
+                    sx={{ width: "100%" }}
+                    >
+                    {/* Spotify block */}
+                    <div
+                        style={{
+                        textAlign: "center",
+                        width: "100%",
+                        maxWidth: "500px",
+                        order: 1, // default
+                        }}
+                    >
+                        <h2>Post Office Magic</h2>
+                        <p>
+                        <i>
+                            An{" "}
+                            <a
+                            href="https://open.spotify.com/episode/0QALfnHOGIwSsMrV4sCXae?si=d1fbac8384474056"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             >
-                                <div style={{textAlign: "center"}}>
-                                    <h2>Post Office Magic</h2>
-                                    
-                                    <p><i>An <a href="https://open.spotify.com/episode/0QALfnHOGIwSsMrV4sCXae?si=d1fbac8384474056" target="_blank" rel="noopener noreferrer">audio documentary</a> to deliver a postcard...without Google Maps</i></p>
-                                    
-                                    <iframe 
-                                        src="https://open.spotify.com/embed/episode/48W7r1PCKQhiGJmTou2eAs?utm_source=generator" 
-                                        width="100%" 
-                                        height="350" 
-                                        frameBorder="0" 
-                                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-                                        loading="lazy">
-
-                                        </iframe>
-                                        
-                                </div>
-
-                                <div style={{textAlign: "center"}}>
-                                    <h2>Schmidt Sciences</h2>
-                                    <p><i>A <a href="/#/schmidtsciences" onClick={() => window.scrollTo(0, 0)}>series</a> of animated videos about the foundation's cutting edge science</i></p>
-                                    <iframe src="https://drive.google.com/file/d/1ibBvNatw42GwsBKm8k0mrkZgu16xmTow/preview" 
-                                        width="500" height="281" allow="autoplay"></iframe>
-                                </div>
-                                </Stack>
+                            audio documentary
+                            </a>{" "}
+                            to deliver a postcard...without Google Maps
+                        </i>
+                        </p>
+                        <iframe
+                        src="https://open.spotify.com/embed/episode/48W7r1PCKQhiGJmTou2eAs?utm_source=generator"
+                        width="100%"
+                        height="350"
+                        frameBorder="0"
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"
+                        style={{
+                            borderRadius: "8px",
+                        }}
+                        ></iframe>
                     </div>
 
+                    {/* Video block */}
+                    <div
+                        style={{
+                        textAlign: "center",
+                        width: "100%",
+                        maxWidth: "500px",
+                        order: 2, // stays below on mobile
+                        }}
+                    >
+                        <h2>Schmidt Sciences</h2>
+                        <p>
+                        <i>
+                            A{" "}
+                            <a
+                            href="/#/schmidtsciences"
+                            onClick={() => window.scrollTo(0, 0)}
+                            >
+                            series
+                            </a>{" "}
+                            of animated videos about the foundation's cutting edge science
+                        </i>
+                        </p>
+                        <iframe
+                        src="https://drive.google.com/file/d/1ibBvNatw42GwsBKm8k0mrkZgu16xmTow/preview"
+                        width="100%"
+                        height="281"
+                        allow="autoplay"
+                        style={{
+                            borderRadius: "8px",
+                        }}
+                        ></iframe>
+                    </div>
+                    </Stack>
+                </div>
                 </div>
 
 
