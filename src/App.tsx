@@ -21,6 +21,7 @@ import Brilliant from "./Projects/Brilliant"
 import Speaking from "./Projects/Speaking";
 import MyWork from "./Projects/MyWork";
 import Schmidt from "./Projects/Schmidt";
+import Reflection from "./Projects/Reflection";
 
 function App() {
   const navigate = useNavigate();
@@ -54,6 +55,7 @@ function App() {
             <Route path="/fol" element={<FOL navFunc={handleTitleClick}/>} />
             <Route path="/speaking" element={<Speaking />} />
             <Route path="/brilliant" element={<Brilliant navFunc={handleTitleClick}/>} />
+            <Route path="/reflection" element={<Reflection navFunc={handleTitleClick}/>} />
 
         </Routes>
     </> 
