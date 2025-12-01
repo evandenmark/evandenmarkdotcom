@@ -159,7 +159,7 @@ const Home = () => {
                         <i>
                             A{" "}
                             <a
-                            href="/#/schmidtsciences"
+                            href="/schmidtsciences"
                             onClick={() => window.scrollTo(0, 0)}
                             >
                             series
