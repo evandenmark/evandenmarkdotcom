@@ -22,6 +22,8 @@ import Speaking from "./Projects/Speaking";
 import MyWork from "./Projects/MyWork";
 import Schmidt from "./Projects/Schmidt";
 import Reflection from "./Projects/Reflection";
+import WaiWaiAlerts from "./WaiWai/WaiWaiAlerts";
+import WaiWaiPrivacy from "./WaiWai/WaiWaiPrivacy";
 
 function App() {
   const navigate = useNavigate();
@@ -56,6 +58,8 @@ function App() {
             <Route path="/speaking" element={<Speaking />} />
             <Route path="/brilliant" element={<Brilliant navFunc={handleTitleClick}/>} />
             <Route path="/reflection" element={<Reflection navFunc={handleTitleClick}/>} />
+            <Route path="/waiwai-alerts" element={<WaiWaiAlerts />} />
+            <Route path="/waiwai-privacy" element={<WaiWaiPrivacy />} />
 
         </Routes>
     </> 
